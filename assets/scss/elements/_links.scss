@@ -1,0 +1,10 @@
+a {
+	text-decoration: none;
+  color: color('red');
+
+  &:hover,
+  &:focus,
+  &:active {
+    text-decoration: underline;
+  }
+}

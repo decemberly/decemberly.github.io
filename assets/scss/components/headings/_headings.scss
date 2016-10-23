@@ -1,0 +1,101 @@
+// Headings
+//
+// Here is the site's headline sizes in different varieties.
+// Sizes run in an alphabetical order, not to be confused
+// with html-headings such as h1, h2 and so on.
+
+%heading {
+  @include transition;
+  color: color('black');
+  word-wrap: break-word;
+  font-weight: 400;
+  font-family: $oswald;
+  text-transform: uppercase;
+
+  a {
+    color: color('black');
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: color('red');
+      text-decoration: underline;
+    }
+  }
+
+  .c-bookmark & {
+    color: color('black');
+    overflow: hidden;
+  }
+
+  .c-bookmark:hover &,
+  .c-bookmark:focus &,
+  .c-bookmark:active & {
+    text-decoration: underline;
+    color: color('red');
+  }
+}
+
+// Heading-A
+//
+// Style for the c-heading-a class
+//
+// Markup: heading-a.twig
+//
+// Style guide: headings.heading-a
+%heading-a,
+.c-heading-a {
+  @extend %heading;
+  font-size: pxtoem(40);
+  line-height: 1.15;
+  margin: 0 0 0.3em;
+
+  @include respond-to('medium-large') {
+    font-size: pxtoem(50);
+  }
+
+  @include respond-to('xxlarge') {
+    font-size: pxtoem(60);
+  }
+}
+
+// Heading-B
+//
+// Style for the c-heading-b class
+//
+// Markup: heading-b.twig
+//
+// Style guide: headings.heading-b
+%heading-b,
+.c-heading-b {
+  @extend %heading;
+  font-size: pxtoem(24);
+  line-height: 1.15;
+  margin: 0 0 1.6em;
+  text-align: center;
+  font-weight: normal;
+
+  @include respond-to('large') {
+    font-size: pxtoem(27);
+  }
+}
+
+// Heading-C
+//
+// Style for the c-heading-c class
+//
+// Markup: heading-c.twig
+//
+// Style guide: headings.heading-c
+%heading-c,
+.c-heading-c {
+  @extend %heading;
+  font-size: pxtoem(27);
+  line-height: 1.15;
+  margin: 0 0 0.5em;
+
+  @include respond-to('large') {
+    font-size: pxtoem(36);
+  }
+}

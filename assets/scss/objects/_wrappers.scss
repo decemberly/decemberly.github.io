@@ -1,0 +1,15 @@
+// Wrapper
+//
+// Wrappers are used to limit the max-width of an element.
+//
+// Markup:
+// <div class="o-wrapper kss-wrapper">.o-wrapper</div>
+//
+// Style guide: grid.wrapper
+.o-wrapper {
+  @extend %clearfix;
+  width: 90%;
+  max-width: pxtoem(1200);
+  margin-right: auto;
+  margin-left: auto;
+}

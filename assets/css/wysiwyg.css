@@ -1,0 +1,224 @@
+@charset "UTF-8";
+
+@import 'https://fonts.googleapis.com/css?family=PT+Serif:400,700';
+
+@import 'https://fonts.googleapis.com/css?family=Oswald|Slabo+27px';
+
+.c-body,
+body {
+  font-family: "Slabo 27px", sans-serif;
+  font-size: 1.125em;
+  line-height: 1.65;
+  max-width: 40em;
+}
+
+.c-body__preamble {
+  font-size: 1.15em;
+  line-height: 1.5;
+  margin-bottom: 1.4em;
+  max-width: 38em;
+}
+
+.c-body *:not(.c-body__preamble),
+body *:not(.c-body__preamble) {
+  max-width: 36em;
+}
+
+.c-body.-center,
+body.-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.c-body img,
+body img,
+.c-body .c-media,
+body .c-media {
+  display: block;
+  margin: 0 0 1.5em;
+}
+
+.c-body video,
+body video,
+.c-body object,
+body object,
+.c-body iframe,
+body iframe {
+  max-width: 100%;
+  margin: 0 0 1.5em;
+}
+
+.c-body a,
+body a {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #212121;
+  border-bottom: solid 0.08em #fc3f50;
+  text-decoration: none;
+}
+
+.c-body a:hover,
+body a:hover,
+.c-body a:focus,
+body a:focus,
+.c-body a:active,
+body a:active {
+  color: #fc3f50;
+  border-bottom-color: #fc3f50;
+}
+
+.c-body ul,
+body ul,
+.c-body ol,
+body ol {
+  padding-left: 3em;
+  margin-top: 0;
+  margin-bottom: 1.6em;
+}
+
+.c-body ul:last-child,
+body ul:last-child,
+.c-body ol:last-child,
+body ol:last-child {
+  margin: 0;
+}
+
+.c-body li,
+body li {
+  padding-left: 0.3em;
+}
+
+.c-body table,
+body table {
+  margin-bottom: 1.6em;
+}
+
+.c-body h2,
+body h2 {
+  font-weight: bold;
+  font-size: 1.375em;
+  margin: 2em 0 0.3em;
+  color: #333;
+}
+
+.c-body h3,
+body h3 {
+  font-weight: normal;
+  font-size: 1.125em;
+  margin: 2em 0 0.3em;
+  color: #333;
+}
+
+.c-body > p,
+body > p {
+  margin: 0 0 1em;
+}
+
+.c-body > p:last-child,
+body > p:last-child {
+  margin: 0;
+}
+
+.c-body blockquote,
+body blockquote {
+  font-family: "Slabo 27px", sans-serif;
+  color: #333;
+  position: relative;
+  font-size: 1.125em;
+  line-height: 1.25em;
+  text-align: center;
+  margin: 3em 0.5em 1.5em;
+}
+
+.c-body blockquote:before,
+body blockquote:before {
+  position: absolute;
+  content: '”';
+  font-size: 3.5em;
+  line-height: 1em;
+  color: #333;
+  top: -0.5em;
+  left: 0;
+  right: 0;
+}
+
+.c-body *:first-child,
+body *:first-child {
+  margin-top: 0;
+}
+
+.c-body-small {
+  font-size: 0.875em;
+  line-height: 1.65;
+  max-width: 36em;
+}
+
+.c-body-small a {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #212121;
+  border-bottom: solid 0.08em #fc3f50;
+  text-decoration: none;
+}
+
+.c-body-small a:hover,
+.c-body-small a:focus,
+.c-body-small a:active {
+  color: #fc3f50;
+  border-bottom-color: #fc3f50;
+}
+
+.c-body-small ul,
+.c-body-small ol {
+  padding-left: 3em;
+  margin-top: 0;
+  margin-bottom: 1.6em;
+}
+
+.c-body-small ul:last-child,
+.c-body-small ol:last-child {
+  margin: 0;
+}
+
+.c-body-small li {
+  padding-left: 0.3em;
+}
+
+.c-body-small > p {
+  margin: 0 0 1em;
+}
+
+.c-body-small > p:last-child {
+  margin: 0;
+}
+
+body {
+  margin: 2em;
+  width: 727px;
+}
+
+@media (min-width: 48em) {
+  .c-body__preamble {
+    font-size: 1.3em;
+  }
+
+  .c-body h2,
+  body h2 {
+    font-size: 1.4em;
+  }
+
+  .c-body h3,
+  body h3 {
+    font-size: 1.2em;
+  }
+
+  .c-body blockquote,
+  body blockquote {
+    font-size: 1.28571em;
+    line-height: 1.2963em;
+  }
+
+  .c-body-small {
+    font-size: 1em;
+  }
+}

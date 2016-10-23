@@ -1,0 +1,59 @@
+// Articles
+//
+// Articles are independent pieces of content wrapped in the `article`-tag.
+
+.c-case {
+  background: color('grey','lighter');
+  overflow: hidden;
+
+  &:nth-child(odd) {
+    background: color('white');
+  }
+
+  &:last-child {
+    border-bottom: 4px solid color('grey','lighter');
+  }
+
+  &__description {
+    color: color('grey', 'dark');
+    font-size: pxtoem(20);
+    margin: 0 0 0.2em;
+  }
+
+  &__media {
+    margin-bottom: 1.2em;
+    border: 1px solid color('grey', 'lighter');
+
+    @include respond-to('large') {
+      float: right;
+      width: 48%;
+      margin-left: 4%;
+    }
+  }
+
+  &__link {
+    @include transition;
+    text-decoration: underline;
+    margin: 1.5em 0 0;
+    display: inline-block;
+    font-size: pxtoem(18);
+    line-height: pxtoem(20,18);
+
+    [class^="c-icon"] {
+      @include transition;
+      margin-right: 0.5em;
+      vertical-align: sub;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: color('black');
+
+      [class^="c-icon"] {
+        fill: color('black');
+        margin-right: 0.5em;
+      }
+    }
+  }
+}

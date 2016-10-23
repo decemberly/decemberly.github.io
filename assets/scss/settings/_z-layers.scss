@@ -1,0 +1,12 @@
+/// Map of colors.
+/// @see {function} z
+/// @type Map
+$z-layers: (
+  below     : -1,
+  default   : 1,
+  above     : 2,
+  top       : 3,
+  modal     : 9000,
+  overlay   : 8000,
+  dropdown  : 7000,
+);
