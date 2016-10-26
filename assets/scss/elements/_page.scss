@@ -1,9 +1,9 @@
 html {
   line-height: $root-line-height;
   padding: 0;
-  background-color: color('white');
+  background-color: color('grey','lightest');
   color: color('black');
-  font-family: $slabo;
+  font-family: $lato;
   -webkit-font-smoothing: antialiased;
 }
 

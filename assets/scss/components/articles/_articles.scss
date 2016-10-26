@@ -2,22 +2,49 @@
 //
 // Articles are independent pieces of content wrapped in the `article`-tag.
 
-.c-case {
-  background: color('grey','lighter');
-  overflow: hidden;
+.c-page {
+  background-color: color('white');
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: pxtoem(30) pxtoem(20);
+  margin-top: pxtoem(-30);
+  box-sizing: border-box;
 
-  &:nth-child(odd) {
-    background: color('white');
+  @include respond-to('medium') {
+    padding: pxtoem(50) 7% pxtoem(70);
   }
+
+  @include respond-to('large') {
+    margin-top: pxtoem(-80);
+    padding: pxtoem(80) pxtoem(80) pxtoem(120);
+  }
+
+  @include respond-to('xxlarge') {
+    max-width: pxtoem(920);
+  }
+}
+
+.c-case {
+  overflow: hidden;
+  border-bottom: 2px solid color('grey','lighter');
 
   &:last-child {
-    border-bottom: 4px solid color('grey','lighter');
+    border-bottom: 0;
   }
 
-  &__description {
-    color: color('grey', 'dark');
-    font-size: pxtoem(20);
-    margin: 0 0 0.2em;
+  &:nth-child(odd) {
+    .c-case__media {
+      @include respond-to('large') {
+        float: left;
+        margin-left: 0;
+        margin-right: 8%;
+      }
+    }
+  }
+
+  &__wrapper {
+    overflow: hidden;
   }
 
   &__media {
@@ -26,8 +53,8 @@
 
     @include respond-to('large') {
       float: right;
-      width: 48%;
-      margin-left: 4%;
+      width: 46%;
+      margin-left: 8%;
     }
   }
 
@@ -41,7 +68,7 @@
 
     [class^="c-icon"] {
       @include transition;
-      margin-right: 0.5em;
+      margin-left: 0.5em;
       vertical-align: sub;
     }
 

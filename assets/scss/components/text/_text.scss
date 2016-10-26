@@ -2,24 +2,39 @@
 
 // Body text
 .c-body {
-  font-family: $slabo;
-  font-size: pxtoem(18);
+  font-size: pxtoem(14);
   line-height: 1.65;
-  max-width: 40em;
+  max-width: 36em;
 
   &__preamble {
-    font-size: 1.15em;
+    font-size: 1.1em;
     line-height: 1.5;
-    margin-bottom: 1.4em;
-    max-width: 38em;
+    max-width: 34em;
+    font-weight: 700;
+  }
 
-    @include respond-to('large') {
-      font-size: 1.3em;
+  @include respond-to('medium') {
+    font-size: pxtoem(18);
+
+    &__preamble {
+      font-size: 1.15em;
+      line-height: 1.5;
+      margin-bottom: 1.4em;
+    }
+  }
+
+  @include respond-to('large') {
+    font-size: pxtoem(20);
+
+    &__preamble {
+      font-size: 1.15em;
+      line-height: 1.5;
+      margin-bottom: 1.4em;
     }
   }
 
   *:not(.c-body__preamble) {
-    max-width: 36em;
+    max-width: 32em;
   }
 
   &.-center {
@@ -104,7 +119,6 @@
   }
 
   blockquote {
-    font-family: $slabo;
     color: color('grey','darker');
     position: relative;
     font-size: pxtoem(18);

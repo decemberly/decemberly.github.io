@@ -8,9 +8,7 @@
   @include transition;
   color: color('black');
   word-wrap: break-word;
-  font-weight: 400;
-  font-family: $oswald;
-  text-transform: uppercase;
+  font-weight: 700;
 
   a {
     color: color('black');
@@ -47,16 +45,19 @@
 %heading-a,
 .c-heading-a {
   @extend %heading;
-  font-size: pxtoem(40);
+  font-size: pxtoem(22);
   line-height: 1.15;
+  text-transform: uppercase;
   margin: 0 0 0.3em;
+  color: color('blue');
+  text-align: center;
 
-  @include respond-to('medium-large') {
-    font-size: pxtoem(50);
+  @include respond-to('medium') {
+    font-size: pxtoem(28);
   }
 
-  @include respond-to('xxlarge') {
-    font-size: pxtoem(60);
+  @include respond-to('large') {
+    font-size: pxtoem(32);
   }
 }
 

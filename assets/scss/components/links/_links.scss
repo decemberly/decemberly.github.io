@@ -17,7 +17,6 @@
   &__link {
     @include transition;
     color: color('grey','darker');
-    font-family: $oswald;
     line-height: pxtoem(32);
 
     [class^="c-icon"] {

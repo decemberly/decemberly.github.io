@@ -1,8 +1,6 @@
 @charset "UTF-8";
 
-@import 'https://fonts.googleapis.com/css?family=PT+Serif:400,700';
-
-@import 'https://fonts.googleapis.com/css?family=Oswald|Slabo+27px';
+@import 'https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet';
 
 .o-row::after,
 .o-wrapper::after,
@@ -283,12 +281,12 @@ pre {
 }
 
 ::-moz-selection {
-  background: #fc3f50;
+  background: #B8312F;
   color: #fff;
 }
 
 ::selection {
-  background: #fc3f50;
+  background: #B8312F;
   color: #fff;
 }
 
@@ -300,7 +298,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #fc3f50;
+  color: #B8312F;
 }
 
 a:hover,
@@ -322,9 +320,9 @@ li > ol {
 html {
   line-height: 1.6;
   padding: 0;
-  background-color: #fafafa;
-  color: #212121;
-  font-family: "Slabo 27px", sans-serif;
+  background-color: #F4F4F4;
+  color: #363636;
+  font-family: "Lato", serif;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -379,23 +377,28 @@ blockquote {
   margin-left: auto;
 }
 
-.c-case {
-  background: #ebebeb;
-  overflow: hidden;
+.c-page {
+  background-color: #fafafa;
+  max-width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 1.875em 1.25em;
+  margin-top: -1.875em;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-.c-case:nth-child(odd) {
-  background: #fafafa;
+.c-case {
+  overflow: hidden;
+  border-bottom: 2px solid #ebebeb;
 }
 
 .c-case:last-child {
-  border-bottom: 4px solid #ebebeb;
+  border-bottom: 0;
 }
 
-.c-case__description {
-  color: #676767;
-  font-size: 1.25em;
-  margin: 0 0 0.2em;
+.c-case__wrapper {
+  overflow: hidden;
 }
 
 .c-case__media {
@@ -416,20 +419,20 @@ blockquote {
 .c-case__link [class^="c-icon"] {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  margin-right: 0.5em;
+  margin-left: 0.5em;
   vertical-align: sub;
 }
 
 .c-case__link:hover,
 .c-case__link:focus,
 .c-case__link:active {
-  color: #212121;
+  color: #363636;
 }
 
 .c-case__link:hover [class^="c-icon"],
 .c-case__link:focus [class^="c-icon"],
 .c-case__link:active [class^="c-icon"] {
-  fill: #212121;
+  fill: #363636;
   margin-right: 0.5em;
 }
 
@@ -440,29 +443,26 @@ blockquote {
 }
 
 .c-header {
-  padding: 1.2em 0;
+  padding: 2em 0 4em;
+  background: #28324E;
 }
 
 .c-header__title {
+  color: #fafafa;
+  font-weight: 700;
   font-size: 1.125em;
   text-align: center;
   margin: 0;
-  font-family: "Oswald", serif;
-  font-weight: 400;
-  text-transform: uppercase;
 }
 
 .c-header__description {
-  font-size: 1.375em;
-  margin: 1.8em auto;
+  color: #fafafa;
+  font-size: 1em;
+  margin: 0 auto;
   text-align: center;
   max-width: 18em;
   clear: both;
   line-height: 1.3;
-}
-
-.c-header__description small {
-  font-size: 0.75em;
 }
 
 .c-header__link {
@@ -481,7 +481,7 @@ blockquote {
 .c-header__link:hover,
 .c-header__link:focus,
 .c-header__link:active {
-  background: #fc3f50;
+  background: #B8312F;
   text-decoration: none;
 }
 
@@ -495,17 +495,15 @@ blockquote {
 .c-heading-c {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #212121;
+  color: #363636;
   word-wrap: break-word;
-  font-weight: 400;
-  font-family: "Oswald", serif;
-  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .c-heading-a a,
 .c-heading-b a,
 .c-heading-c a {
-  color: #212121;
+  color: #363636;
   text-decoration: none;
 }
 
@@ -518,7 +516,7 @@ blockquote {
 .c-heading-a a:active,
 .c-heading-b a:active,
 .c-heading-c a:active {
-  color: #fc3f50;
+  color: #B8312F;
   text-decoration: underline;
 }
 
@@ -528,7 +526,7 @@ blockquote {
   .c-heading-b,
 .c-bookmark
   .c-heading-c {
-  color: #212121;
+  color: #363636;
   overflow: hidden;
 }
 
@@ -551,13 +549,16 @@ blockquote {
 .c-bookmark:active
   .c-heading-c {
   text-decoration: underline;
-  color: #fc3f50;
+  color: #B8312F;
 }
 
 .c-heading-a {
-  font-size: 2.5em;
+  font-size: 1.375em;
   line-height: 1.15;
+  text-transform: uppercase;
   margin: 0 0 0.3em;
+  color: #28324E;
+  text-align: center;
 }
 
 .c-heading-b {
@@ -596,9 +597,17 @@ blockquote {
 }
 
 .c-icon-arrow {
-  fill: #fc3f50;
+  fill: #B8312F;
   width: 1.125em;
   height: 1.125em;
+}
+
+.c-divider {
+  display: block;
+  width: 6.25em;
+  height: 0.875em;
+  margin: 0.8em auto 1.6em;
+  fill: #B8312F;
 }
 
 .c-social {
@@ -620,7 +629,6 @@ blockquote {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   color: #333;
-  font-family: "Oswald", serif;
   line-height: 2em;
 }
 
@@ -636,31 +644,30 @@ blockquote {
 .c-social__link:hover,
 .c-social__link:focus,
 .c-social__link:active {
-  color: #fc3f50;
+  color: #B8312F;
 }
 
 .c-social__link:hover [class^="c-icon"],
 .c-social__link:focus [class^="c-icon"],
 .c-social__link:active [class^="c-icon"] {
-  fill: #fc3f50;
+  fill: #B8312F;
 }
 
 .c-body {
-  font-family: "Slabo 27px", sans-serif;
-  font-size: 1.125em;
+  font-size: 0.875em;
   line-height: 1.65;
-  max-width: 40em;
+  max-width: 36em;
 }
 
 .c-body__preamble {
-  font-size: 1.15em;
+  font-size: 1.1em;
   line-height: 1.5;
-  margin-bottom: 1.4em;
-  max-width: 38em;
+  max-width: 34em;
+  font-weight: 700;
 }
 
 .c-body *:not(.c-body__preamble) {
-  max-width: 36em;
+  max-width: 32em;
 }
 
 .c-body.-center {
@@ -684,16 +691,16 @@ blockquote {
 .c-body a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #212121;
-  border-bottom: solid 0.08em #fc3f50;
+  color: #363636;
+  border-bottom: solid 0.08em #B8312F;
   text-decoration: none;
 }
 
 .c-body a:hover,
 .c-body a:focus,
 .c-body a:active {
-  color: #fc3f50;
-  border-bottom-color: #fc3f50;
+  color: #B8312F;
+  border-bottom-color: #B8312F;
 }
 
 .c-body ul,
@@ -739,7 +746,6 @@ blockquote {
 }
 
 .c-body blockquote {
-  font-family: "Slabo 27px", sans-serif;
   color: #333;
   position: relative;
   font-size: 1.125em;
@@ -772,16 +778,16 @@ blockquote {
 .c-body-small a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #212121;
-  border-bottom: solid 0.08em #fc3f50;
+  color: #363636;
+  border-bottom: solid 0.08em #B8312F;
   text-decoration: none;
 }
 
 .c-body-small a:hover,
 .c-body-small a:focus,
 .c-body-small a:active {
-  color: #fc3f50;
-  border-bottom-color: #fc3f50;
+  color: #B8312F;
+  border-bottom-color: #B8312F;
 }
 
 .c-body-small ul,
@@ -876,7 +882,7 @@ blockquote {
 }
 
 .is-tabbed {
-  outline: 2px solid #4484ce;
+  outline: 2px solid #28324E;
   outline-offset: -2px !important;
 }
 
@@ -885,7 +891,7 @@ blockquote {
 }
 
 .is-tabbed.c-bookmark [class^='c-heading'] {
-  outline: 2px solid #4484ce;
+  outline: 2px solid #28324E;
   outline-offset: -2px !important;
 }
 
@@ -900,13 +906,6 @@ blockquote {
 
 .u-hidden {
   display: none;
-}
-
-@media (min-width: 22.5em) {
-  .c-header__description {
-    font-size: 1.875em;
-    margin: 2em auto;
-  }
 }
 
 @media (min-width: 34.375em) {
@@ -956,8 +955,34 @@ blockquote {
     padding-top: 3.75em;
   }
 
+  .c-page {
+    padding: 3.125em 7% 4.375em;
+  }
+
+  .c-header__title {
+    font-size: 1.625em;
+  }
+
   .c-header__description {
-    font-size: 2.25em;
+    font-size: 1.25em;
+  }
+
+  .c-heading-a {
+    font-size: 1.75em;
+  }
+
+  .c-divider {
+    margin: 0.8em auto 2.6em;
+  }
+
+  .c-body {
+    font-size: 1.125em;
+  }
+
+  .c-body__preamble {
+    font-size: 1.15em;
+    line-height: 1.5;
+    margin-bottom: 1.4em;
   }
 
   .u-left\@medium {
@@ -1168,22 +1193,37 @@ blockquote {
     padding-top: 5.625em;
   }
 
+  .c-page {
+    margin-top: -5em;
+    padding: 5em 5em 7.5em;
+  }
+
+  .c-case:nth-child(odd) .c-case__media {
+    float: left;
+    margin-left: 0;
+    margin-right: 8%;
+  }
+
   .c-case__media {
     float: right;
-    width: 48%;
-    margin-left: 4%;
+    width: 46%;
+    margin-left: 8%;
   }
 
   .c-header {
-    padding: 2em 0;
+    padding: 5em 0 10em;
   }
 
   .c-header__title {
-    font-size: 1.625em;
+    font-size: 2.25em;
   }
 
   .c-header__description {
-    font-size: 3em;
+    font-size: 1.625em;
+  }
+
+  .c-heading-a {
+    font-size: 2em;
   }
 
   .c-heading-b {
@@ -1194,8 +1234,14 @@ blockquote {
     font-size: 2.25em;
   }
 
+  .c-body {
+    font-size: 1.25em;
+  }
+
   .c-body__preamble {
-    font-size: 1.3em;
+    font-size: 1.15em;
+    line-height: 1.5;
+    margin-bottom: 1.4em;
   }
 
   .c-body h2 {
@@ -1454,8 +1500,8 @@ blockquote {
     margin-left: 12.5583%;
   }
 
-  .c-heading-a {
-    font-size: 3.75em;
+  .c-page {
+    max-width: 57.5em;
   }
 
   .u-left\@xxlarge {
@@ -1510,10 +1556,6 @@ blockquote {
 
   .o-2-2\@medium-large:nth-child(2n) {
     margin-right: 0;
-  }
-
-  .c-heading-a {
-    font-size: 3.125em;
   }
 
   .u-last\@medium-large {

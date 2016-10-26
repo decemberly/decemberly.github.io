@@ -24,3 +24,15 @@
   width: pxtoem(18);
   height: pxtoem(18);
 }
+
+.c-divider {
+  display: block;
+  width: pxtoem(100);
+  height: pxtoem(14);
+  margin: 0.8em auto 1.6em;
+  fill: color('red');
+
+  @include respond-to('medium') {
+    margin: 0.8em auto 2.6em;
+  }
+}
