@@ -71,32 +71,15 @@
 %heading-b,
 .c-heading-b {
   @extend %heading;
-  font-size: pxtoem(24);
-  line-height: 1.15;
-  margin: 0 0 1.6em;
-  text-align: center;
-  font-weight: normal;
-
-  @include respond-to('large') {
-    font-size: pxtoem(27);
-  }
-}
-
-// Heading-C
-//
-// Style for the c-heading-c class
-//
-// Markup: heading-c.twig
-//
-// Style guide: headings.heading-c
-%heading-c,
-.c-heading-c {
-  @extend %heading;
   font-size: pxtoem(27);
-  line-height: 1.15;
-  margin: 0 0 0.5em;
+  line-height: 1.25;
+  margin: 0 0 0.4em;
+
+  @include respond-to('medium') {
+    font-size: pxtoem(36);
+  }
 
   @include respond-to('large') {
-    font-size: pxtoem(36);
+    font-size: pxtoem(42);
   }
 }
