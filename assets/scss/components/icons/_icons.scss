@@ -27,12 +27,20 @@
 
 .c-divider {
   display: block;
-  width: pxtoem(100);
-  height: pxtoem(14);
+  width: pxtoem(60);
+  height: pxtoem(9);
   margin: 0.8em auto 1.6em;
   fill: color('red');
 
   @include respond-to('medium') {
+    margin: 0.8em auto 2em;
+    width: pxtoem(70);
+    height: pxtoem(11);
+  }
+
+  @include respond-to('large') {
     margin: 0.8em auto 2.6em;
+    width: pxtoem(100);
+    height: pxtoem(14);
   }
 }
