@@ -500,7 +500,8 @@ blockquote {
 }
 
 .c-heading-a,
-.c-heading-b {
+.c-heading-b,
+.c-heading-c {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   color: #363636;
@@ -509,17 +510,21 @@ blockquote {
 }
 
 .c-heading-a a,
-.c-heading-b a {
+.c-heading-b a,
+.c-heading-c a {
   color: #363636;
   text-decoration: none;
 }
 
 .c-heading-a a:hover,
 .c-heading-b a:hover,
+.c-heading-c a:hover,
 .c-heading-a a:focus,
 .c-heading-b a:focus,
+.c-heading-c a:focus,
 .c-heading-a a:active,
-.c-heading-b a:active {
+.c-heading-b a:active,
+.c-heading-c a:active {
   color: #B8312F;
   text-decoration: underline;
 }
@@ -527,7 +532,9 @@ blockquote {
 .c-bookmark
   .c-heading-a,
 .c-bookmark
-  .c-heading-b {
+  .c-heading-b,
+.c-bookmark
+  .c-heading-c {
   color: #363636;
   overflow: hidden;
 }
@@ -536,14 +543,20 @@ blockquote {
   .c-heading-a,
 .c-bookmark:hover
   .c-heading-b,
+.c-bookmark:hover
+  .c-heading-c,
 .c-bookmark:focus
   .c-heading-a,
 .c-bookmark:focus
   .c-heading-b,
+.c-bookmark:focus
+  .c-heading-c,
 .c-bookmark:active
   .c-heading-a,
 .c-bookmark:active
-  .c-heading-b {
+  .c-heading-b,
+.c-bookmark:active
+  .c-heading-c {
   text-decoration: underline;
   color: #B8312F;
 }
@@ -561,6 +574,13 @@ blockquote {
   font-size: 1.6875em;
   line-height: 1.25;
   margin: 0 0 0.4em;
+}
+
+.c-heading-c {
+  font-size: 1.125em;
+  line-height: 1.25;
+  margin: 0 0 0.4em;
+  text-align: center;
 }
 
 .c-icon-github {
@@ -1014,6 +1034,10 @@ blockquote {
     font-size: 2.25em;
   }
 
+  .c-heading-c {
+    font-size: 1.375em;
+  }
+
   .c-divider {
     margin: 0.8em auto 2em;
     width: 4.375em;
@@ -1284,6 +1308,10 @@ blockquote {
 
   .c-heading-b {
     font-size: 2.625em;
+  }
+
+  .c-heading-c {
+    font-size: 1.75em;
   }
 
   .c-divider {

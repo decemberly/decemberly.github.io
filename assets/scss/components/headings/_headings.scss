@@ -36,12 +36,6 @@
 }
 
 // Heading-A
-//
-// Style for the c-heading-a class
-//
-// Markup: heading-a.twig
-//
-// Style guide: headings.heading-a
 %heading-a,
 .c-heading-a {
   @extend %heading;
@@ -62,12 +56,6 @@
 }
 
 // Heading-B
-//
-// Style for the c-heading-b class
-//
-// Markup: heading-b.twig
-//
-// Style guide: headings.heading-b
 %heading-b,
 .c-heading-b {
   @extend %heading;
@@ -83,3 +71,22 @@
     font-size: pxtoem(42);
   }
 }
+
+// Heading-C
+%heading-c,
+.c-heading-c {
+  @extend %heading;
+  font-size: pxtoem(18);
+  line-height: 1.25;
+  margin: 0 0 0.4em;
+  text-align: center;
+
+  @include respond-to('medium') {
+    font-size: pxtoem(22);
+  }
+
+  @include respond-to('large') {
+    font-size: pxtoem(28);
+  }
+}
+
