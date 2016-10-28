@@ -324,6 +324,8 @@ html {
   color: #363636;
   font-family: "Lato", serif;
   -webkit-font-smoothing: antialiased;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -342,7 +344,6 @@ blockquote {
 }
 
 .o-row {
-  overflow: hidden;
   margin-bottom: 1.25em;
 }
 
@@ -389,7 +390,6 @@ blockquote {
 }
 
 .c-case {
-  overflow: hidden;
   border-bottom: 2px solid #ebebeb;
 }
 
@@ -402,8 +402,12 @@ blockquote {
 }
 
 .c-case__media {
-  margin-bottom: 1.2em;
-  border: 1px solid #ebebeb;
+  position: relative;
+  margin-bottom: 2em;
+}
+
+.c-case__media__small {
+  display: none;
 }
 
 .c-case__link {
@@ -434,6 +438,11 @@ blockquote {
 .c-case__link:active [class^="c-icon"] {
   fill: #363636;
   margin-right: 0.5em;
+}
+
+.c-background-white {
+  background: #fafafa;
+  overflow: hidden;
 }
 
 .c-footer {
@@ -632,13 +641,36 @@ blockquote {
   fill: #B8312F;
 }
 
+.c-preview {
+  background: #ebebeb;
+  border: 0.375em solid #ebebeb;
+  border-radius: 0.1875em;
+}
+
+.c-preview__url {
+  background: #fafafa;
+  border-radius: 0.25em;
+  margin: 0 0 0.375em;
+  padding: 0.25em 0.5em 0.25em 2.125em;
+  font-size: 0.875em;
+  color: #676767;
+  background-image: url("../img/svg/icon--globe.svg");
+  background-repeat: no-repeat;
+  background-position: 0.5em center;
+  background-size: 1.25em 1.25em;
+}
+
+.c-preview.-small .c-preview__media {
+  width: 14.0625em;
+  height: 24.5em;
+}
+
 .c-quote {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #28324E;
   color: #fafafa;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding: 1.875em 10%;
   text-align: center;
   font-size: 1.125em;
@@ -1220,16 +1252,18 @@ blockquote {
     padding: 5em 5em 7.5em;
   }
 
-  .c-case:nth-child(odd) .c-case__media {
+  .c-case__media.-even {
     float: left;
-    margin-left: 0;
-    margin-right: 8%;
+    margin-right: 5%;
   }
 
-  .c-case__media {
+  .c-case__media.-odd {
     float: right;
-    width: 46%;
-    margin-left: 8%;
+    margin-left: 5%;
+  }
+
+  .c-case__media__small {
+    display: block;
   }
 
   .c-header {
@@ -1528,6 +1562,23 @@ blockquote {
     max-width: 57.5em;
   }
 
+  .c-case__media {
+    width: 56%;
+  }
+
+  .c-case__media__small {
+    position: absolute;
+    top: 6.5625em;
+  }
+
+  .c-case__media__small.-odd {
+    right: -3.125em;
+  }
+
+  .c-case__media__small.-even {
+    left: -3.125em;
+  }
+
   .c-quote {
     font-size: 1.75em;
     padding: 2.5em 10%;
@@ -1725,6 +1776,10 @@ blockquote {
 
   .o-12-12\@large-xxlarge:nth-child(12n) {
     margin-right: 0;
+  }
+
+  .c-case__media__large {
+    display: none;
   }
 }
 

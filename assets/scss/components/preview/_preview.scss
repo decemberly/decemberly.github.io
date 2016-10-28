@@ -1,0 +1,26 @@
+.c-preview {
+  background: color('grey','lighter');
+  border: pxtoem(6) solid color('grey','lighter');
+  border-radius: pxtoem(3);
+
+  &__url {
+    background: color('white');
+    border-radius: pxtoem(4);
+    margin: 0 0 pxtoem(6);
+    padding: pxtoem(4) pxtoem(8) pxtoem(4) pxtoem(34);
+    font-size: pxtoem(14);
+    color: color('grey','dark');
+    background-image: url('../img/svg/icon--globe.svg');
+    background-repeat: no-repeat;
+    background-position: pxtoem(8) center;
+    background-size: pxtoem(20) pxtoem(20);
+  }
+
+  &.-small {
+
+    .c-preview__media {
+      width: pxtoem(225);
+      height: pxtoem(392);
+    }
+  }
+}

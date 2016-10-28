@@ -7,7 +7,6 @@
 // Style guide: grid.row
 .o-row {
   @extend %clearfix;
-  overflow: hidden;
   margin-bottom: pxtoem(20);
 
   @include respond-to('medium') {

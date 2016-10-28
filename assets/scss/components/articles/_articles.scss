@@ -26,21 +26,10 @@
 }
 
 .c-case {
-  overflow: hidden;
   border-bottom: 2px solid color('grey','lighter');
 
   &:last-child {
     border-bottom: 0;
-  }
-
-  &:nth-child(odd) {
-    .c-case__media {
-      @include respond-to('large') {
-        float: left;
-        margin-left: 0;
-        margin-right: 8%;
-      }
-    }
   }
 
   &__wrapper {
@@ -48,13 +37,51 @@
   }
 
   &__media {
-    margin-bottom: 1.2em;
-    border: 1px solid color('grey', 'lighter');
+    position: relative;
+    margin-bottom: 2em;
 
     @include respond-to('large') {
-      float: right;
-      width: 46%;
-      margin-left: 8%;
+
+      &.-even {
+        float: left;
+        margin-right: 5%;
+      }
+
+      &.-odd {
+        float: right;
+        margin-left: 5%;
+      }
+    }
+
+    @include respond-to('xxlarge') {
+      width: 56%;
+    }
+
+    &__large {
+      @include respond-to('large-xxlarge') {
+        display: none;
+      }
+    }
+
+    &__small {
+      display: none;
+
+      @include respond-to('large') {
+        display: block;
+      }
+
+      @include respond-to('xxlarge') {
+        position: absolute;
+        top: pxtoem(105);
+
+        &.-odd {
+          right: pxtoem(-50);
+        }
+
+        &.-even {
+          left: pxtoem(-50);
+        }
+      }
     }
   }
 
