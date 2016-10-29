@@ -461,6 +461,7 @@ blockquote {
   box-shadow: 0 2px 0 0 #d9d9d9;
   border-bottom: 1px solid #d9d9d9;
   position: relative;
+  line-height: 2em;
 }
 
 .c-button [class^="c-icon"] {
@@ -1015,6 +1016,7 @@ blockquote {
 
   .c-button {
     font-size: 1.125em;
+    line-height: 1.77778em;
   }
 
   .c-footer {

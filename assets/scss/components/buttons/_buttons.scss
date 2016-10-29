@@ -1,0 +1,40 @@
+.c-button {
+  @include transition;
+  cursor: pointer;
+  border: 0;
+  background: color('white');
+  color: color('red');
+  display: inline-block;
+  text-decoration: none;
+  padding: pxtoem(10) pxtoem(30) pxtoem(5);
+  border-radius: pxtoem(5);
+  font-weight: bold;
+  box-shadow: 0 2px 0 0 color('grey','light');
+  border-bottom: 1px solid color('grey','light');
+  position: relative;
+  line-height: pxtoem(32);
+
+  @include respond-to('medium') {
+    font-size: pxtoem(18);
+    line-height: pxtoem(32,18);
+  }
+
+  [class^="c-icon"] {
+    @include transition;
+    margin-right: 0.5em;
+    float: left;
+  }
+
+  &:hover,
+  &:focus {
+    top: 1px;
+    box-shadow: 0 1px 0 0 color('grey','light');
+    text-decoration: none;
+  }
+
+  &:active {
+    top: 2px;
+    box-shadow: 0;
+    text-decoration: none;
+  }
+}
