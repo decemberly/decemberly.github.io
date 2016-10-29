@@ -445,8 +445,48 @@ blockquote {
   overflow: hidden;
 }
 
+.c-button {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  border: 0;
+  background: #fafafa;
+  color: #B8312F;
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.625em 1.875em 0.3125em;
+  border-radius: 0.3125em;
+  font-weight: bold;
+  -webkit-box-shadow: 0 2px 0 0 #d9d9d9;
+  box-shadow: 0 2px 0 0 #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  position: relative;
+}
+
+.c-button [class^="c-icon"] {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  margin-right: 0.5em;
+  float: left;
+}
+
+.c-button:hover,
+.c-button:focus {
+  top: 1px;
+  -webkit-box-shadow: 0 1px 0 0 #d9d9d9;
+  box-shadow: 0 1px 0 0 #d9d9d9;
+  text-decoration: none;
+}
+
+.c-button:active {
+  top: 2px;
+  -webkit-box-shadow: 0;
+  box-shadow: 0;
+  text-decoration: none;
+}
+
 .c-footer {
-  background-color: #ebebeb;
+  background-color: #28324E;
   font-size: 0.875em;
   padding: 2em 0;
 }
@@ -454,6 +494,14 @@ blockquote {
 .c-header {
   padding: 2em 0 4em;
   background: #28324E;
+}
+
+.c-header__image {
+  border-radius: 100%;
+  width: 6.25em;
+  margin: 0 auto 1em;
+  background: #fafafa;
+  border: 2px solid #fafafa;
 }
 
 .c-header__title {
@@ -529,36 +577,10 @@ blockquote {
   text-decoration: underline;
 }
 
-.c-bookmark
-  .c-heading-a,
-.c-bookmark
-  .c-heading-b,
-.c-bookmark
-  .c-heading-c {
-  color: #363636;
-  overflow: hidden;
-}
-
-.c-bookmark:hover
-  .c-heading-a,
-.c-bookmark:hover
-  .c-heading-b,
-.c-bookmark:hover
-  .c-heading-c,
-.c-bookmark:focus
-  .c-heading-a,
-.c-bookmark:focus
-  .c-heading-b,
-.c-bookmark:focus
-  .c-heading-c,
-.c-bookmark:active
-  .c-heading-a,
-.c-bookmark:active
-  .c-heading-b,
-.c-bookmark:active
-  .c-heading-c {
-  text-decoration: underline;
-  color: #B8312F;
+.-white.c-heading-a,
+.-white.c-heading-b,
+.-white.c-heading-c {
+  color: #fafafa;
 }
 
 .c-heading-a {
@@ -579,29 +601,31 @@ blockquote {
 .c-heading-c {
   font-size: 1.125em;
   line-height: 1.25;
-  margin: 0 0 0.4em;
+  margin: 0 0 1em;
   text-align: center;
+  text-transform: uppercase;
+  color: #28324E;
 }
 
 .c-icon-github {
   display: inline-block;
   width: 2.25em;
   height: 2.25em;
-  fill: #676767;
+  fill: #fafafa;
 }
 
 .c-icon-linkedin {
   display: inline-block;
   width: 2.25em;
   height: 2.25em;
-  fill: #676767;
+  fill: #fafafa;
 }
 
 .c-icon-email {
   display: inline-block;
   width: 2em;
   height: 2em;
-  fill: #676767;
+  fill: #B8312F;
 }
 
 .c-icon-arrow {
@@ -616,6 +640,10 @@ blockquote {
   height: 0.5625em;
   margin: 0.8em auto 1.6em;
   fill: #B8312F;
+}
+
+.c-divider.-white {
+  fill: #fafafa;
 }
 
 .c-social {
@@ -636,7 +664,8 @@ blockquote {
 .c-social__link {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #333;
+  color: #fafafa;
+  font-size: 1.125em;
   line-height: 2em;
 }
 
@@ -644,21 +673,13 @@ blockquote {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   margin-right: 0.5em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+  float: left;
 }
 
 .c-social__link:hover,
 .c-social__link:focus,
 .c-social__link:active {
-  color: #B8312F;
-}
-
-.c-social__link:hover [class^="c-icon"],
-.c-social__link:focus [class^="c-icon"],
-.c-social__link:active [class^="c-icon"] {
-  fill: #B8312F;
+  text-decoration: underline;
 }
 
 .c-preview {
@@ -712,6 +733,24 @@ blockquote {
   opacity: 0.1;
 }
 
+.c-skills {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 0.875em;
+  line-height: 1;
+  max-width: 36em;
+  text-align: center;
+}
+
+.c-skills__item {
+  border-radius: 0.625em;
+  display: inline-block;
+  background: #ebebeb;
+  padding: 0.2em 0.8em 0.3em;
+  margin: 0 0.5em 0.5em 0;
+}
+
 .c-body {
   font-size: 0.875em;
   line-height: 1.65;
@@ -758,8 +797,9 @@ blockquote {
 .c-body a:hover,
 .c-body a:focus,
 .c-body a:active {
-  color: #B8312F;
+  color: #fafafa;
   border-bottom-color: #B8312F;
+  background: #B8312F;
 }
 
 .c-body ul,
@@ -826,51 +866,6 @@ blockquote {
 
 .c-body *:first-child {
   margin-top: 0;
-}
-
-.c-body-small {
-  font-size: 0.875em;
-  line-height: 1.65;
-  max-width: 36em;
-}
-
-.c-body-small a {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  color: #363636;
-  border-bottom: solid 0.08em #B8312F;
-  text-decoration: none;
-}
-
-.c-body-small a:hover,
-.c-body-small a:focus,
-.c-body-small a:active {
-  color: #B8312F;
-  border-bottom-color: #B8312F;
-}
-
-.c-body-small ul,
-.c-body-small ol {
-  padding-left: 3em;
-  margin-top: 0;
-  margin-bottom: 1.6em;
-}
-
-.c-body-small ul:last-child,
-.c-body-small ol:last-child {
-  margin: 0;
-}
-
-.c-body-small li {
-  padding-left: 0.3em;
-}
-
-.c-body-small > p {
-  margin: 0 0 1em;
-}
-
-.c-body-small > p:last-child {
-  margin: 0;
 }
 
 /* Helper to see utility-classes /*
@@ -1018,6 +1013,14 @@ blockquote {
     padding: 3.125em 7% 4.375em;
   }
 
+  .c-button {
+    font-size: 1.125em;
+  }
+
+  .c-footer {
+    padding: 3em 0;
+  }
+
   .c-header__title {
     font-size: 1.625em;
   }
@@ -1035,7 +1038,7 @@ blockquote {
   }
 
   .c-heading-c {
-    font-size: 1.375em;
+    font-size: 1.25em;
   }
 
   .c-divider {
@@ -1051,6 +1054,10 @@ blockquote {
   .c-quote:before {
     top: 88%;
     font-size: 10.41667em;
+  }
+
+  .c-skills {
+    font-size: 1.125em;
   }
 
   .c-body {
@@ -1273,7 +1280,7 @@ blockquote {
 
   .c-page {
     margin-top: -5em;
-    padding: 5em 5em 7.5em;
+    padding: 5em 5em 6.25em;
   }
 
   .c-case__media.-even {
@@ -1290,16 +1297,20 @@ blockquote {
     display: block;
   }
 
+  .c-footer {
+    padding: 4em 0;
+  }
+
   .c-header {
     padding: 5em 0 10em;
   }
 
-  .c-header__title {
-    font-size: 2.25em;
+  .c-header__image {
+    width: 12.5em;
   }
 
-  .c-header__description {
-    font-size: 1.625em;
+  .c-header__title {
+    font-size: 2.25em;
   }
 
   .c-heading-a {
@@ -1311,7 +1322,7 @@ blockquote {
   }
 
   .c-heading-c {
-    font-size: 1.75em;
+    font-size: 1.375em;
   }
 
   .c-divider {
@@ -1341,10 +1352,6 @@ blockquote {
   .c-body blockquote {
     font-size: 1.28571em;
     line-height: 1.2963em;
-  }
-
-  .c-body-small {
-    font-size: 1em;
   }
 
   .u-left\@large {

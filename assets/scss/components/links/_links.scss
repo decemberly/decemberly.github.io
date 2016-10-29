@@ -16,25 +16,20 @@
 
   &__link {
     @include transition;
-    color: color('grey','darker');
+    color: color('white');
+    font-size: pxtoem(18);
     line-height: pxtoem(32);
 
     [class^="c-icon"] {
       @include transition;
       margin-right: 0.5em;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
+      float: left;
     }
 
     &:hover,
     &:focus,
     &:active {
-      color: color('red');
-
-      [class^="c-icon"] {
-        fill: color('red');
-      }
+      text-decoration: underline;
     }
   }
 }

@@ -22,16 +22,8 @@
     }
   }
 
-  .c-bookmark & {
-    color: color('black');
-    overflow: hidden;
-  }
-
-  .c-bookmark:hover &,
-  .c-bookmark:focus &,
-  .c-bookmark:active & {
-    text-decoration: underline;
-    color: color('red');
+  &.-white {
+    color: color('white');
   }
 }
 
@@ -78,15 +70,17 @@
   @extend %heading;
   font-size: pxtoem(18);
   line-height: 1.25;
-  margin: 0 0 0.4em;
+  margin: 0 0 1em;
   text-align: center;
+  text-transform: uppercase;
+  color: color('blue');
 
   @include respond-to('medium') {
-    font-size: pxtoem(22);
+    font-size: pxtoem(20);
   }
 
   @include respond-to('large') {
-    font-size: pxtoem(28);
+    font-size: pxtoem(22);
   }
 }
 

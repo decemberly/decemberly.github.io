@@ -17,7 +17,7 @@
 
   @include respond-to('large') {
     margin-top: pxtoem(-80);
-    padding: pxtoem(80) pxtoem(80) pxtoem(120);
+    padding: pxtoem(80) pxtoem(80) pxtoem(100);
   }
 
   @include respond-to('xxlarge') {

@@ -2,21 +2,21 @@
   display: inline-block;
   width: pxtoem(36);
   height: pxtoem(36);
-  fill: color('grey','dark');
+  fill: color('white');
 }
 
 .c-icon-linkedin {
   display: inline-block;
   width: pxtoem(36);
   height: pxtoem(36);
-  fill: color('grey','dark');
+  fill: color('white');
 }
 
 .c-icon-email {
   display: inline-block;
   width: pxtoem(32);
   height: pxtoem(32);
-  fill: color('grey','dark');
+  fill: color('red');
 }
 
 .c-icon-arrow {
@@ -42,5 +42,9 @@
     margin: 0.8em auto 2.6em;
     width: pxtoem(100);
     height: pxtoem(14);
+  }
+
+  &.-white {
+    fill: color('white');
   }
 }

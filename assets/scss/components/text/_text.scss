@@ -64,8 +64,9 @@
     &:hover,
     &:focus,
     &:active {
-      color: color('red');
+      color: color('white');
       border-bottom-color: color('red');
+      background: color('red');
     }
   }
 
@@ -145,52 +146,5 @@
 
   *:first-child {
     margin-top: 0;
-  }
-}
-
-.c-body-small {
-  font-size: pxtoem(14);
-  line-height: 1.65;
-  max-width: 36em;
-
-  @include respond-to('large') {
-    font-size: pxtoem(16);
-  }
-
-  a {
-    @include transition;
-    color: color('black');
-    border-bottom: solid 0.08em color('red');
-    text-decoration: none;
-
-    &:hover,
-    &:focus,
-    &:active {
-      color: color('red');
-      border-bottom-color: color('red');
-    }
-  }
-
-  ul,
-  ol {
-    padding-left: 3em;
-    margin-top: 0;
-    margin-bottom: 1.6em;
-
-    &:last-child {
-      margin: 0;
-    }
-  }
-
-  li {
-    padding-left: 0.3em;
-  }
-
-  > p {
-    margin: 0 0 1em;
-
-    &:last-child {
-      margin: 0;
-    }
   }
 }

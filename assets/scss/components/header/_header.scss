@@ -1,12 +1,22 @@
 // Header
-//
-// No style guide reference
 .c-header {
   padding: 2em 0 4em;
   background: color('blue');
 
   @include respond-to('large') {
     padding: 5em 0 10em;
+  }
+
+  &__image {
+    border-radius: 100%;
+    width: pxtoem(100);
+    margin: 0 auto 1em;
+    background: color('white');
+    border: 2px solid color('white');
+
+    @include respond-to('large') {
+      width: pxtoem(200);
+    }
   }
 
   &__title {
@@ -36,10 +46,6 @@
 
     @include respond-to('medium') {
       font-size: pxtoem(20);
-    }
-
-    @include respond-to('large') {
-      font-size: pxtoem(26);
     }
   }
 
