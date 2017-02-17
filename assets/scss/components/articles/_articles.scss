@@ -93,7 +93,7 @@
     font-size: pxtoem(18);
     line-height: pxtoem(20,18);
 
-    [class^="c-icon"] {
+    [class^='c-icon'] {
       @include transition;
       margin-left: 0.5em;
       vertical-align: sub;
@@ -104,7 +104,7 @@
     &:active {
       color: color('black');
 
-      [class^="c-icon"] {
+      [class^='c-icon'] {
         fill: color('black');
         margin-right: 0.5em;
       }

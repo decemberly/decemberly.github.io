@@ -19,7 +19,7 @@
     line-height: pxtoem(32,18);
   }
 
-  [class^="c-icon"] {
+  [class^='c-icon'] {
     @include transition;
     margin-right: 0.5em;
     float: left;

@@ -54,6 +54,7 @@ dfn {
 }
 
 // Address styling not present in Chrome, Safari and IE 9.
+// sass-lint:disable no-qualifying-elements
 abbr[title] {
   border-bottom: 1px dotted;
 }

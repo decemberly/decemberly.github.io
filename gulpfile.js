@@ -23,8 +23,8 @@ options.assets = {
 };
 
 // Define the path to the project's .scss-lint.yml.
-options.scssLint = {
-  yml: options.assets.sass + '.scss-lint.yml'
+options.sassLint = {
+  yml: options.assets.sass + '.sass-lint.yml'
 };
 
 // ################################
@@ -33,6 +33,7 @@ options.scssLint = {
 var gulp        = require('gulp'),
     gcmq        = require('gulp-group-css-media-queries'),
     del         = require('del'),
+    sassLint    = require('gulp-sass-lint'),
     plugins     = require('gulp-load-plugins')({
       replaceString: /\bgulp[\-.]/
     });
@@ -82,7 +83,11 @@ gulp.task('lint', ['lint:sass']);
 
 gulp.task('lint:sass', function() {
   return gulp.src(options.assets.sass + '**/*.scss')
-    .pipe(plugins.scssLint({'config': options.scssLint.yml}));
+    .pipe(sassLint({
+      configFile: options.sassLint.yml
+    }))
+    .pipe(sassLint.format())
+    .pipe(sassLint.failOnError())
 });
 
 // ##############################

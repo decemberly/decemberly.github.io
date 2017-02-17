@@ -20,7 +20,7 @@
     font-size: pxtoem(18);
     line-height: pxtoem(32);
 
-    [class^="c-icon"] {
+    [class^='c-icon'] {
       @include transition;
       margin-right: 0.5em;
       float: left;
