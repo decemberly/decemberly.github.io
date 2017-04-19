@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@import 'https://fonts.googleapis.com/css?family=Lato:300,700" rel="stylesheet';
+@import 'https://fonts.googleapis.com/css?family=Nunito:400,800" rel="stylesheet';
 
 .o-row::after,
 .o-wrapper::after,
@@ -316,8 +316,8 @@ html {
   line-height: 1.6;
   padding: 0;
   background-color: #f4f4f4;
-  color: #363636;
-  font-family: "Lato", serif;
+  color: #4f4737;
+  font-family: "Nunito", sans-serif;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
@@ -422,13 +422,13 @@ blockquote {
 .c-case__link:hover,
 .c-case__link:focus,
 .c-case__link:active {
-  color: #363636;
+  color: #4f4737;
 }
 
 .c-case__link:hover [class^='c-icon'],
 .c-case__link:focus [class^='c-icon'],
 .c-case__link:active [class^='c-icon'] {
-  fill: #363636;
+  fill: #4f4737;
   margin-right: 0.5em;
 }
 
@@ -476,14 +476,14 @@ blockquote {
 }
 
 .c-footer {
-  background-color: #28324e;
+  background-color: #006d83;
   font-size: 0.875em;
   padding: 2em 0;
 }
 
 .c-header {
   padding: 2em 0 4em;
-  background: #28324e;
+  background: #006d83;
 }
 
 .c-header__image {
@@ -491,15 +491,17 @@ blockquote {
   width: 6.25em;
   margin: 0 auto 1em;
   background: #fafafa;
-  border: 2px solid #fafafa;
+  border: 8px solid #fafafa;
+  box-shadow: 4px 4px 5px 0 rgba(0, 0, 0, 0.15);
 }
 
 .c-header__title {
   color: #fafafa;
-  font-weight: 700;
+  font-weight: 800;
   font-size: 1.125em;
   text-align: center;
   margin: 0;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .c-header__description {
@@ -507,9 +509,10 @@ blockquote {
   font-size: 1em;
   margin: 0 auto;
   text-align: center;
-  max-width: 18em;
+  max-width: 20em;
   clear: both;
   line-height: 1.3;
+  text-shadow: 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .c-header__link {
@@ -541,7 +544,7 @@ blockquote {
 .c-heading-c {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #363636;
+  color: #4f4737;
   word-wrap: break-word;
   font-weight: 700;
 }
@@ -549,7 +552,7 @@ blockquote {
 .c-heading-a a,
 .c-heading-b a,
 .c-heading-c a {
-  color: #363636;
+  color: #4f4737;
   text-decoration: none;
 }
 
@@ -577,8 +580,9 @@ blockquote {
   line-height: 1.15;
   text-transform: uppercase;
   margin: 0 0 0.3em;
-  color: #28324e;
   text-align: center;
+  font-weight: 800;
+  letter-spacing: 0.06em;
 }
 
 .c-heading-b {
@@ -593,7 +597,7 @@ blockquote {
   margin: 0 0 1em;
   text-align: center;
   text-transform: uppercase;
-  color: #28324e;
+  color: #006d83;
 }
 
 .c-icon-github {
@@ -697,7 +701,7 @@ blockquote {
 
 .c-quote {
   box-sizing: border-box;
-  background-color: #28324e;
+  background-color: #006d83;
   color: #fafafa;
   margin: 0 auto;
   padding: 1.875em 10%;
@@ -749,7 +753,7 @@ blockquote {
   font-size: 1.1em;
   line-height: 1.5;
   max-width: 34em;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .c-body *:not(.c-body__preamble) {
@@ -777,7 +781,7 @@ blockquote {
 .c-body a {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #363636;
+  color: #4f4737;
   border-bottom: solid 0.08em #b8312f;
   text-decoration: none;
 }
@@ -924,7 +928,7 @@ blockquote {
 }
 
 .is-tabbed {
-  outline: 2px solid #28324e;
+  outline: 2px solid #006d83;
   outline-offset: -2px !important;
 }
 
@@ -933,7 +937,7 @@ blockquote {
 }
 
 .is-tabbed.c-bookmark [class^='c-heading'] {
-  outline: 2px solid #28324e;
+  outline: 2px solid #006d83;
   outline-offset: -2px !important;
 }
 
@@ -1464,6 +1468,10 @@ blockquote {
 
   .o-2-left\@xlarge {
     margin-left: 12.5583%;
+  }
+
+  .c-header__title {
+    font-size: 2.8125em;
   }
 
   .u-left\@xlarge {

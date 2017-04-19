@@ -35,8 +35,9 @@
   line-height: 1.15;
   text-transform: uppercase;
   margin: 0 0 0.3em;
-  color: color('blue');
   text-align: center;
+  font-weight: 800;
+  letter-spacing: 0.06em;
 
   @include respond-to('medium') {
     font-size: pxtoem(28);
