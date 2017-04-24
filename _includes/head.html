@@ -30,7 +30,11 @@
   <meta name="twitter:creator" content="@decemberly_">
 
   <!-- RSS -->
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title[page.lang] }}" href="/{{ site.feed[page.lang] | prepend: site.baseurl[page.lang] | prepend: site.url[page.lang] }}" />
+  {% if page.lang == 'en' %}
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title[page.lang] }}" href="http://feeds.feedburner.com/hannahandersson/en" />
+  {% else %}
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title[page.lang] }}" href="http://feeds.feedburner.com/hannahandersson" />
+  {% endif %}
 
   <!--Favicon -->
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
