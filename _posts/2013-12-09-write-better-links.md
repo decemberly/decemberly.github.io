@@ -77,4 +77,4 @@ It has long been a standard for links in body text to be underlined. It's so wid
 
 * Use underline for all links in body text
 * Avoid italic style, because it's often difficult to read
-* don't use underlines on anything other than links
+* Don't use underlines on anything other than links
