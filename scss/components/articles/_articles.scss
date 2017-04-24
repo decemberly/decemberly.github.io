@@ -3,7 +3,7 @@
 // Articles are independent pieces of content wrapped in the `article`-tag.
 .c-article--teaser {
   @extend %clearfix;
-	border-bottom: 4px solid color('black');
+  border-bottom: 4px solid color('black');
   margin-bottom: pxtoem(20);
   padding-bottom: pxtoem(20);
 
@@ -18,12 +18,12 @@
   }
 
   &:last-child:last-of-type {
-  	border: 0;
+    border: 0;
     padding-bottom: 0;
   }
 
   &:last-of-type {
-  	margin-bottom: 0;
+    margin-bottom: 0;
   }
 }
 

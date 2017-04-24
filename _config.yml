@@ -13,7 +13,7 @@ description:
   en: Front-end developer with a passion for usable, scalable and inclusive web.
   sv: Gränssnittsutvecklare som brinner för användbar, skalbar och inkluderande webb.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://hannahandersson.se" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: decemberly_
 github_username:  decemberly
 
