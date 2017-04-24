@@ -1,0 +1,18 @@
+.c-author {
+  background-color: color('yellow');
+  padding: 2.2em;
+
+  &__image {
+    border-radius: 100%;
+    width: pxtoem(60);
+    margin: 0 auto 1em;
+    background: color('black');
+    border: 2px solid color('black');
+
+    @include respond-to('large') {
+      width: pxtoem(120);
+      margin: 0 2.2em 0 0;
+      float: left;
+    }
+  }
+}

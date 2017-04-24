@@ -1,0 +1,142 @@
+// Headings
+//
+// Here is the site's headline sizes in different varieties.
+// Sizes run in an alphabetical order, not to be confused
+// with html-headings such as h1, h2 and so on.
+
+%heading {
+  @include transition;
+  color: color('black');
+  word-wrap: break-word;
+  font-weight: bold;
+  font-family: $playfair;
+
+  a {
+    @include transition;
+    color: color('black');
+    text-decoration: none;
+    border-bottom: 0.1em solid transparent;
+
+    &:hover,
+    &:focus,
+    &:active {
+      border-bottom-color: color('red');
+      text-decoration: none;
+    }
+  }
+
+  &.-center {
+    text-align: center;
+  }
+
+  &.-white,
+  &.-white a {
+    color: color('white');
+  }
+}
+
+// Heading-A
+%heading-a,
+.c-heading-a {
+  @extend %heading;
+  font-size: pxtoem(30);
+  line-height: 1.15;
+  margin: 0 0 0.5em;
+
+  @include respond-to('small') {
+    font-size: pxtoem(34);
+  }
+
+  @include respond-to('medium') {
+    font-size: pxtoem(36);
+  }
+
+  @include respond-to('large') {
+    font-size: pxtoem(48);
+  }
+
+  @include respond-to('xlarge') {
+    font-size: pxtoem(56);
+  }
+}
+
+// Heading-B
+%heading-b,
+.c-heading-b {
+  @extend %heading;
+  font-size: pxtoem(26);
+  line-height: 1.23;
+  margin: 0 0 0.4em;
+
+  @include respond-to('medium') {
+    font-size: pxtoem(28);
+  }
+
+  @include respond-to('large') {
+    font-size: pxtoem(32);
+    margin-bottom: 0.3em;
+  }
+
+  @include respond-to('xlarge') {
+    font-size: pxtoem(44);
+  }
+}
+
+// Heading-C
+%heading-c,
+.c-heading-c {
+  @extend %heading;
+  font-size: pxtoem(20);
+  line-height: 1.15;
+  margin: 0 0 0.4em;
+
+  @include respond-to('medium') {
+    font-size: pxtoem(26);
+  }
+
+  @include respond-to('large') {
+    font-size: pxtoem(28);
+  }
+
+  @include respond-to('xlarge') {
+    font-size: pxtoem(34);
+  }
+}
+
+// Heading-C
+%heading-d,
+.c-heading-d {
+  @extend %heading;
+  font-family: $roboto;
+  font-size: pxtoem(16);
+  line-height: 1.15;
+  margin: 0 0 0.3em;
+
+  @include respond-to('medium') {
+    font-size: pxtoem(18);
+  }
+
+  @include respond-to('large') {
+    font-size: pxtoem(20);
+  }
+}
+
+.c-preheading {
+  text-transform: uppercase;
+  font-size: pxtoem(13);
+  letter-spacing: 0.1em;
+  line-height: 1.1;
+  margin: 0 0 0.83em;
+
+  @include respond-to('medium') {
+    font-size: pxtoem(16);
+  }
+
+  &.-center {
+    text-align: center;
+  }
+
+  &.-white {
+    color: color('white');
+  }
+}

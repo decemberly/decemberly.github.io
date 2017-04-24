@@ -11,7 +11,7 @@ var path = require('path'),
 // (and the package.json) in your project's root folder and edit the paths
 // accordingly.
 options.rootPath = {
-  assets       : 'assets/'
+  assets       : ''
 };
 
 options.assets = {
@@ -38,8 +38,42 @@ var gulp        = require('gulp'),
       replaceString: /\bgulp[\-.]/
     });
 
+const child = require('child_process');
+const gutil = require('gulp-util');
+const browserSync = require('browser-sync').create();
+
+const siteRoot = '_site';
+
+gulp.task('serve', () => {
+  browserSync.init({
+    files: [siteRoot + '/**'],
+    port: 4000,
+    server: {
+      baseDir: siteRoot
+    }
+  });
+});
+
+// Jekyll task
+gulp.task('jekyll', () => {
+  const jekyll = child.spawn('jekyll', ['serve',
+    '--watch',
+    '--incremental',
+    '--drafts'
+  ]);
+
+  const jekyllLogger = (buffer) => {
+    buffer.toString()
+      .split(/\n/)
+      .forEach((message) => gutil.log('Jekyll: ' + message));
+  };
+
+  jekyll.stdout.on('data', jekyllLogger);
+  jekyll.stderr.on('data', jekyllLogger);
+});
+
 // Default Task
-gulp.task('default', ['build', ]);
+gulp.task('default', ['build', 'jekyll', 'watch']);
 
 // #################
 // Build everything.

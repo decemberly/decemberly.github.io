@@ -1,0 +1,59 @@
+// Header
+.c-header {
+  padding: 1.2em 0 0.8em;
+  background-color: color('yellow');
+  box-shadow: 0 2px 0 rgba(0,0,0,0.1);
+
+  @include respond-to('large') {
+    padding: 1.8em 0;
+  }
+
+  &__wrapper {
+    float: left;
+
+    @include respond-to('medium') {
+      padding-left: 1em;
+      border-left: 3px solid color('black');
+    }
+  }
+
+  &__title {
+    float: left;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    font-size: pxtoem(13);
+    margin: 0 0 0.3em;
+
+    a {
+      color: color('black');
+
+      &:hover,
+      &:focus,
+      &:active {
+        text-decoration: none;
+      }
+    }
+
+    @include respond-to('medium') {
+      font-size: pxtoem(18);
+    }
+
+    @include respond-to('large') {
+      font-size: pxtoem(22);
+    }
+  }
+
+  &__tagline {
+    float: left;
+    clear: left;
+    line-height: 1.1;
+    letter-spacing: 0.06em;
+    font-size: pxtoem(13);
+
+    @include respond-to('medium') {
+      font-size: pxtoem(16);
+    }
+  }
+}

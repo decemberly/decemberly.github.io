@@ -1,0 +1,21 @@
+// Footer
+//
+// No styleguide reference
+.c-footer {
+  background-color: color('black');
+  font-size: pxtoem(14);
+  padding: 2em 0;
+
+  @include respond-to('medium') {
+    padding: 3em 0;
+  }
+
+  @include respond-to('large') {
+    padding: 4em 0;
+  }
+}
+
+.c-copyright {
+  color: color('white');
+  text-align: center;
+}

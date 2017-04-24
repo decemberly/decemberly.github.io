@@ -1,2 +1,6 @@
+.DS_Store
+_site
+.sass-cache
+*.gem
 node_modules
 bs-config.js

@@ -1,0 +1,38 @@
+// Colors
+//
+// All colors used on the website.
+
+/// Map of colors.
+/// @see {function} color
+/// @type Map
+$colors: (
+  'black': (
+    base: #1a1a1a
+  ),
+  'white': (
+    base: #f0ede1
+  ),
+  'grey': (
+    lightest: #f4f4f4,
+    lighter: #ebebeb,
+    light: #d9d9d9,
+    base: #a8a8a7,
+    dark: #676767,
+    darker: #333
+  ),
+  'blue': (
+    base: #5c6c7a // Links
+  ),
+  'red': (
+    base: #b8312f
+  ),
+  'beige': (
+    base: #f0b575
+  ),
+  'yellow': (
+    base: #fcce00
+  ),
+  'purple': (
+    base: #94618e // Visited links
+  )
+);

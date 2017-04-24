@@ -1,0 +1,41 @@
+---
+layout: default
+---
+
+  <article class="c-article">
+    <div class="o-wrapper o-row">
+      <div class="o-faux-row o-row">
+        <img class="c-article__topImage o-row" src="/img/jpg/hannah.jpg" alt="" aria-hidden="true" />
+  	    {% if page.title %} 
+  	      <h1 class="c-heading-a" itemprop="title">{{ page.title }}</h1> 
+  	    {% endif %}
+
+  			<div class="c-preamble">
+  	    	{{ page.preamble | markdownify }}
+  	    </div>
+
+        <svg class="c-divider" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg.svg#divider"></use></svg>
+
+  			<div class="c-body">
+  	    	{{ content }}
+  	    </div>
+  	  </div>
+    </div>
+  </article>
+
+<section>
+  <div class="o-wrapper">
+    <div class="o-row o-faux-row">
+      <h2 class="c-heading-c -center">{{ page.expertise_title }}</h2>
+      <svg class="c-divider -center" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg.svg#divider"></use></svg>
+      <ul class="c-list-naked">
+        {% for expertise in page.expertises %}
+        <li class="o-row -small o-6-12@large u-left@large">
+          <h3 class="c-heading-d">{{ expertise.title }}</h3>
+          {{ expertise.body | markdownify }}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,63 @@
+---
+layout: default
+---
+<section class="c-background-yellow">
+	<div class="o-wrapper o-row o-faux-row -large">
+		<h2 class="c-heading-a -center">{{ site.description[page.lang] }}</h2>
+    <svg class="c-divider -black -center" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg.svg#divider"></use></svg>
+	</div>
+</section>
+
+{% assign works=site.works | where:"lang", page.lang | sort: 'date' | reverse %}
+{% for work in works limit:1 %}
+	{% include featured-work.html %}
+{% endfor %}
+
+<section class="o-row o-faux-row -large">
+	<div class="o-wrapper">
+		<h2 class="c-preheading">{{ site.t[page.lang].blog }}</h2>
+	  {% assign posts=site.posts | where:"lang", page.lang %}
+	  {% for post in posts limit:3 %}
+	  	{% include post-teaser.html %}
+	  {% endfor %}
+<!-- 	  <a href="{{ site.t[page.lang].menu.blog.url }}" class="c-link-cta -right">
+	  	<span>{{ site.t[page.lang].more_articles }}</span>
+	  	<svg class="c-icon-arrow" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg.svg#icon-arrow"></use></svg>
+  	</a> -->
+  </div>
+</section>
+
+{% assign works=site.works | where:"lang", page.lang | sort: 'date' | reverse %}
+{% for work in works limit:1 offset:1 %}
+	{% include featured-work.html %}
+{% endfor %}
+
+<section>
+	<div class="o-wrapper">
+		<div class="o-row o-faux-row -large">
+		  {% for p in site.pages %}
+		    {% if p.ref == "about" and p.lang == page.lang %} 
+					<h2 class="c-heading-c -center">
+			  		{{ p.expertise_title }}
+					</h2>
+			    <svg class="c-divider -center" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg.svg#divider"></use></svg>
+					<ul class="c-list-naked">
+
+						{% for expertise in p.expertises %}
+							<li class="o-row -small o-6-12@large u-left@large">
+								<h3 class="c-heading-d">{{ expertise.title }}</h3>
+								{{ expertise.body | markdownify }}
+							</li>
+						{% endfor %}
+
+					</ul>
+
+					<div class="u-full u-center-align">
+						<a class="c-link-cta" href="{{ site.t[page.lang].menu.about.url }}"><span>{{ site.t[page.lang].more_about }}</span><svg class="c-icon-arrow" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg.svg#icon-arrow"></use></svg></a>
+					</div>
+
+		    {% endif %}
+			{% endfor %}
+		</div>
+	</div>
+</section>

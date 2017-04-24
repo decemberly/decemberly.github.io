@@ -1,0 +1,39 @@
+---
+layout: default
+---
+  <article class="o-wrapper o-row c-article">
+	  <div class="o-faux-row o-row -large">
+
+	    {% if page.tags %}
+	    	<h2 class="u-visuallyHidden">{{ site.t[page.lang].tags }}</h2>
+	    	<ul class="c-tags">
+		    {% for tag in page.tags %}
+	    		<li class="c-tags__item">
+		    		{{ tag }}
+		    	</li>
+		    {% endfor %}
+	    	</ul>
+	    {% endif %}
+
+	    {% if page.title %} 
+	      <h1 class="c-heading-a" itemprop="title">{{ page.title }}</h1> 
+	    {% endif %}
+
+			<div class="c-preamble">
+	    	{{ page.preamble | markdownify }}
+	    </div>
+
+	    <svg class="c-divider" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg.svg#divider"></use></svg>
+
+			<div class="c-body">
+	    	{{ content }}
+	    </div>
+	  </div>
+
+    <aside class="o-row c-author">
+    	<img class="c-author__image" src="/img/jpg/hannah.jpg" alt="" aria-hidden="true" />
+    	<h2 class="c-preheading">{{ site.t[page.lang].author_title }}</h2>
+    	<p class="c-body-small">{{ site.t[page.lang].author_body }}</p>
+			<a class="c-link-cta -black -right" href="{{ site.t[page.lang].menu.about.url }}"><span>{{ site.t[page.lang].more_about }}</span><svg class="c-icon-arrow" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg.svg#icon-arrow"></use></svg></a>
+    </aside>
+  </article>

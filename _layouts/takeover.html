@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang|default: 'en' }}">
+
+  {% include head.html %}
+
+  <body class="lang-{{ page.lang|default: 'en' }} c-background-grey">
+    <main>
+    	{{ content }}
+    </main>
+    {% include scripts.html %}
+  </body>
+
+</html>

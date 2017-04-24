@@ -1,0 +1,10 @@
+---
+layout: default
+---
+<section class="o-wrapper o-faux-row o-row -large">
+	<h1 class="c-preheading">{{ site.t[page.lang].blog }}</h1>
+  {% assign posts=site.posts | where:"lang", page.lang %}
+  {% for post in posts %}
+  	{% include post-teaser.html %}
+  {% endfor %}
+</section>

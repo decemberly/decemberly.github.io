@@ -1,0 +1,102 @@
+# Site settings
+title:
+  en: Hannah Andersson | Front-end developer
+  sv: Hannah Andersson | Gränssnittsutvecklare
+index:
+  en:
+  sv: sv/
+feed:
+  en: rss
+  sv: sv/rss
+email: hannah@hannahandersson.se
+description: 
+  en: Front-end developer with a passion for usable, scalable and inclusive web.
+  sv: Gränssnittsutvecklare som brinner för användbar, skalbar och inkluderande webb.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: decemberly_
+github_username:  decemberly
+
+# Post settings
+permalink: /:title
+
+# Collections settings
+collections:
+  works:
+    output: true
+
+# Build settings
+markdown: kramdown
+theme: minima
+gems:
+  - jekyll-feed
+include: 
+  - _pages
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - gulpfile
+  - js/lib
+  - js/global.js
+  - node_modules
+  - package.json
+  - scss
+
+# Translation
+t:
+  en:
+    title: Hannah Andersson | Front-end developer
+    tagline: Front-end developer
+    lang_switcher: Byt språk
+    featured_work: Featured work
+    contact: Get in touch
+    contact_text: "I'm always looking forward to new opportunities, just send me an e-mail."
+    tags: Tags
+    blog: Articles
+    author_title: About the author
+    author_body: >+
+      My name is Hannah and I'm a front-end developer with a passion for inclusive design and easy to use web.
+      In this blog I publish answers to and personal thoughts on common questions I get from clients and people in the industry.
+    more_articles: "More articles"
+    more_about: "Read more about me"
+    more_work: "See more of my work"
+    work_url: "Visit site"
+    menu_text: Menu
+    menu:
+      work:
+        name: Work
+        url: "/work/"
+      blog:
+        name: Articles
+        url: "/blog/"
+      about:
+        name: About
+        url: "/about/"
+  sv:
+    title: Hannah Andersson | Gränssnittsutvecklare
+    tagline: Gränssnittsutvecklare
+    lang_switcher: Change language
+    featured_work: Utvalt uppdrag
+    contact: Kontakt
+    contact_text: "Jag ser alltid fram emot nya möjligheter, bara hör av dig."
+    tags: Taggar
+    blog: Artiklar
+    author_title: Om skribenten
+    author_body: >+
+      Jag heter Hannah och är en gränssnittsutvecklare med en passion för inkluderande design och webb som är lätt att använda. 
+      I den här bloggen publicerar jag svar på och personliga tankar till vanliga frågor jag får från kunder och branschkollegor.
+    more_articles: "Fler artiklar"
+    more_about: "Läs mer om mig"
+    more_work: "Se fler uppdrag"
+    work_url: "Besök sajt"
+    menu_text: Meny
+    menu:
+      work:
+        name: Uppdrag
+        url: "/sv/uppdrag/"
+      blog:
+        name: Artiklar
+        url: "/sv/blogg/"
+      about:
+        name: Om
+        url: "/sv/om/"

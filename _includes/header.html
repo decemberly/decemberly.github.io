@@ -1,0 +1,57 @@
+<header class="c-header">
+  <div class="o-wrapper">
+    <div class="c-header__wrapper">
+      <h1 class="c-header__title"><a href="{{ site.baseurl }}/{{ site.index[page.lang] }}">Hannah Andersson</a></h1>
+      <div class="c-header__tagline">{{ site.t[page.lang].tagline }}</div>
+    </div>
+
+    <button class="c-button--menu" data-a11y-toggle="menu">
+      <i class="c-icon-menu"><span class="c-icon-menu__inner"></span></i><span class="c-button--menu__text">{{ site.t[page.lang].menu_text }}</span>
+    </button>
+
+    <div id="menu" class="c-nav__wrapper">
+      <nav class="c-nav">
+        <ul class="c-nav__menu">
+        {% for menu in site.t[page.lang].menu %}
+          
+          {% assign current = '' %}
+          {% if page.layout == 'post' and menu[0] == 'blog' %}
+            {% assign current = ' -current' %}
+          {% endif %}
+          
+          {% if page.layout == 'work' and menu[0] == 'work' %}
+            {% assign current = ' -current' %}
+          {% endif %}
+
+          {% if page.url == menu[1].url %}
+            {% assign current = ' -current' %}
+          {% endif %}
+
+          <li class="c-nav__item">
+            <a class="c-nav__link{{ current }}" href="{{ menu[1].url }}">{{ menu[1].name }}</a>
+          </li>
+        {% endfor %}
+        </ul>
+      </nav>
+      
+      <nav class="c-nav--lang">
+        <h2 class="u-visuallyHidden">{{ site.t[page.lang].lang_switcher }}</h2>
+        <ul class="c-nav--lang__menu">
+        {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
+        {% for post in posts %}
+          <li class="c-nav--lang__item">
+            <a href="{{ post.url }}" class="c-nav--lang__link -{{ post.lang }}">{% if post.lang == 'en' %}English{% else %}Svenska{% endif %}</a>
+          </li>
+        {% endfor %}
+
+        {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+        {% for page in pages %}
+          <li class="c-nav--lang__item">
+            <a href="{{ page.url }}" class="c-nav--lang__link -{{ page.lang }}">{% if page.lang == 'en' %}English{% else %}Svenska{% endif %}</a>
+          </li>
+        {% endfor %}
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>

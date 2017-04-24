@@ -1,0 +1,31 @@
+<article class="c-featured-work" style="background-image: url('{{ work.image }}');">
+  <div class="o-wrapper">
+    <div class="o-row o-faux-row -large">
+      <div class="o-row -small">
+        <h2 class="c-preheading -white">
+          {{ site.t[page.lang].featured_work }}
+        </h2>
+        <h3 class="c-heading-b -white"><a href="{{ work.work_url }}">{{ work.title }}</a></h3>
+        {% if work.tags %}
+          <h2 class="u-visuallyHidden">{{ site.t[page.lang].tags }}</h2>
+          <ul class="c-tags">
+          {% for tag in work.tags %}
+            <li class="c-tags__item">
+              {{ tag }}
+            </li>
+          {% endfor %}
+          </ul>
+        {% endif %}
+        <p class="c-body-small -white">{{ work.content | remove: '<p>' | remove: '</p>' }}</p>
+      </div>
+      <a href="{{ work.work_url }}" class="c-link-cta -right -white">
+        <span>{{ site.t[page.lang].work_url }}</span>
+        <svg class="c-icon-arrow" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg.svg#icon-arrow"></use></svg>
+      </a>
+<!--       <a href="{{ site.t[page.lang].menu.work.url }}" class="c-link-cta -right -white">
+        <span>{{ site.t[page.lang].more_work }}</span>
+        <svg class="c-icon-arrow" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg.svg#icon-arrow"></use></svg>
+      </a> -->
+    </div>
+  </div>
+</article>

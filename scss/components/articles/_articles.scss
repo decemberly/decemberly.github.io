@@ -1,0 +1,67 @@
+// Articles
+//
+// Articles are independent pieces of content wrapped in the `article`-tag.
+.c-article--teaser {
+  @extend %clearfix;
+	border-bottom: 4px solid color('black');
+  margin-bottom: pxtoem(20);
+  padding-bottom: pxtoem(20);
+
+  @include respond-to('medium') {
+    padding-bottom: pxtoem(40);
+    margin-bottom: pxtoem(40);
+  }
+
+  @include respond-to('large') {
+    padding-bottom: pxtoem(60);
+    margin-bottom: pxtoem(60);
+  }
+
+  &:last-child:last-of-type {
+  	border: 0;
+    padding-bottom: 0;
+  }
+
+  &:last-of-type {
+  	margin-bottom: 0;
+  }
+}
+
+.c-article__topImage {  
+  margin-right: auto; 
+  margin-left: auto;
+  width: pxtoem(100);
+  border-radius: 100%;
+  background: color('black');
+  border: 4px solid color('black');
+
+  @include respond-to('large') {
+    width: pxtoem(200);
+  }
+}
+
+.c-featured-work {
+  background-color: color('black');
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: multiply;
+  border-bottom: 4px solid color('yellow');
+
+  &:last-child {
+    border-bottom: 0;
+  }
+}
+
+.c-work__image {
+  background-color: color('black');
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 60vh;
+
+  @include respond-to('xlarge') {
+    margin-right: -6em;
+    margin-left: -6em;
+    width: calc(100% + 12em);
+  }
+}
