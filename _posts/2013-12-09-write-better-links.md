@@ -17,8 +17,8 @@ Sometimes it may be tempting to cram as many links as possible in the text, but 
 
 * Only link to information that adds value to the user, such as related articles and facts
 * Avoid using the same link text for links that lead to different locations
-* don't link to the same information more than once
-* don't put multiple links in a single paragraph, it can be difficult to distinguish them
+* Don't link to the same information more than once
+* Don't put multiple links in a single paragraph, it can be difficult to distinguish them
 * If you really need to have many links in your text, try adding them to a "list of links" at the end of the text
 
 ## 2. Tell us what the link leads to
@@ -30,14 +30,14 @@ Municipalities and county councils can also do a lot to reduce food welfare, acc
 ### You can write like this:
 Municipalities and county councils can also do a lot to reduce food welfare, according to the Food Safety Authority's new report. Do you want to know more? <a rel="nofollow" href="#">Read the full report "Matsvinn i Sverige"</a>.
 
-## 3. don't open links in new windows
+## 3. Don't open links in new windows
 In the early 2000s, it was a common recommendation that external links should automatically open in new windows. Since then, the web browsers have developed and got tabs and other smart settings that let us control which websites we want to open and how to open them.
 
 There are many ways to open links in a new tab; Click with the scroll wheel, ctrl + click, right-click and select open in new tab and so on. 
 
 > There is no longer any reason to force links to open in new windows, it's better to let the users decide for themselves.
 
-* don't open links in new windows automatically, let the user decide for themselves
+* Don't open links in new windows automatically, let the user decide for themselves
 * Documents, such as a PDF or a text document, should be opened in new windows
 * If the link goes to a document, tell the user
 
