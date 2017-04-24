@@ -1,7 +1,7 @@
 ---
 layout: work-article
 title: "Flerspråkig Drupal-sajt för Svenska Afghanistankommittéen"
-lang: en
+lang: sv
 ref: sak
 permalink: /work/sak
 date: 2016-10-17 08:45:21 +0200
