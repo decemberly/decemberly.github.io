@@ -28,7 +28,7 @@ The user wants to know what happens when they click on the link. Too often we se
 Municipalities and county councils can also do a lot to reduce food welfare, according to the Food Safety Authority's new report. To read the full report, <a rel="nofollow" href="#">click here</a>.
 
 ### You can write like this:
-Municipalities and county councils can also do a lot to reduce food welfare, according to the Food Safety Authority's new report. Do you want to know more? <a rel="nofollow" href="#">Read the full report "Matsvinn i Sverige"</a>.
+Municipalities and county councils can also do a lot to reduce food welfare, according to the Food Safety Authority's new report. Do you want to know more? <a rel="nofollow" href="#">Read the full report "Food in Sweden"</a>.
 
 ## 3. Don't open links in new windows
 In the early 2000s, it was a common recommendation that external links should automatically open in new windows. Since then, the web browsers have developed and got tabs and other smart settings that let us control which websites we want to open and how to open them.
