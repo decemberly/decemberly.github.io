@@ -3,7 +3,7 @@ layout: post
 title:  "Så skriver du bättre länkar - åtta tips för att skriva bra länktexter"
 lang: sv
 ref: linktext
-permalink: /sv/skriv-bra-lankar
+permalink: /sv/skriv-battre-lankar
 date: 2013-12-09 08:45:21 +0200
 tags: [tillgänglighet, skrivtips]
 excerpt: >
