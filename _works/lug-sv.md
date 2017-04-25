@@ -12,4 +12,4 @@ image: /img/portfolio/lakare-utan-granser.png
 work_url: https://lakareutangranser.se
 
 ---
-Jag gjorde teknisk planering, konfiguration och gränssnittsutveckling på dessa två komplexa och Drupal webbplatser i ständig utveckling.
+Jag gjorde teknisk planering, konfiguration och front-end utveckling på dessa två komplexa och Drupal webbplatser i ständig utveckling.

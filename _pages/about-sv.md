@@ -5,9 +5,9 @@ permalink: /sv/om/
 ref: about
 lang: sv
 excerpt: >
-  Jag heter Hannah och jag arbetar remote på [SthlmConnection](http://sthlmconnection.se) som gränssnittsutvecklare. Jag brinner för att skapa snabba, inkluderande och responsiva webbplatser.
+  Jag heter Hannah och jag arbetar remote på [SthlmConnection](http://sthlmconnection.se) som front-end utvecklare. Jag brinner för att skapa snabba, inkluderande och responsiva webbplatser.
 preamble: >
-  Jag heter Hannah och jag arbetar remote på [SthlmConnection](http://sthlmconnection.se) som gränssnittsutvecklare. Jag brinner för att skapa snabba, inkluderande och responsiva webbplatser.
+  Jag heter Hannah och jag arbetar remote på [SthlmConnection](http://sthlmconnection.se) som front-end utvecklare. Jag brinner för att skapa snabba, inkluderande och responsiva webbplatser.
 
 
 expertise_title: Jag är specialiserad på
@@ -34,8 +34,8 @@ expertises:
 
 Jag har introducerat formgivare för modulär design, styrt upp deploysystem med back-end utvecklare och varit huvudutvecklare på flera projekt. Jag uppskattar bra design, men jag vet också att det är inte tillräckligt för att göra ett projekt framgångsrikt.
 
-> Tillgänglighet och användbarhet ser jag som självklarheter, därför tror jag på ett tätt samarbete mellan UX, formgivare och gränssnittsutvecklare.
+> Tillgänglighet och användbarhet ser jag som självklarheter, därför tror jag på ett tätt samarbete mellan UX, formgivare och front-end utvecklare.
 
-Förutom att jag är gränssnittsutvecklare har jag också drivit en webb- och kommunikationsbyrå med kunder som Läkare Utan Gränser och Sverige för UNHCR. Jag har en högskoleexamen i grafisk design och webbutveckling och har flera års arbetslivserfarenhet från att jobba som konsult.
+Förutom att jag är front-end utvecklare har jag också drivit en webb- och kommunikationsbyrå med kunder som Läkare Utan Gränser och Sverige för UNHCR. Jag har en högskoleexamen i grafisk design och webbutveckling och har flera års arbetslivserfarenhet från att jobba som konsult.
 
 Jag vill jobba med projekt som jag kan vara stolt över, vara med i fantastiska team och utveckla min kompetens. <a href="/sv/#contact">Hör av dig</a> om du är intresserad av att hjälpa mig dit!

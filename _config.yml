@@ -11,7 +11,7 @@ feed:
 email: hannah@hannahandersson.se
 description: 
   en: Front-end developer with a passion for usable, scalable and inclusive web.
-  sv: Gränssnittsutvecklare som brinner för användbar, skalbar och inkluderande webb.
+  sv: Front-end utvecklare som brinner för användbar, skalbar och inkluderande webb.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://hannahandersson.se" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: decemberly_
@@ -45,7 +45,7 @@ exclude:
 # Translation
 t:
   en:
-    title: Hannah Andersson | Front-end developer
+    title: Hannah Andersson
     tagline: Front-end developer
     lang_switcher: Byt språk
     featured_work: Featured work
@@ -73,8 +73,8 @@ t:
         name: About
         url: "/about/"
   sv:
-    title: Hannah Andersson | Gränssnittsutvecklare
-    tagline: Gränssnittsutvecklare
+    title: Hannah Andersson
+    tagline: Front-end utvecklare
     lang_switcher: Change language
     featured_work: Utvalt uppdrag
     contact: Kontakt
@@ -83,7 +83,7 @@ t:
     blog: Artiklar
     author_title: Om skribenten
     author_body: >+
-      Jag heter Hannah och är en gränssnittsutvecklare med en passion för inkluderande design och webb som är lätt att använda. 
+      Jag heter Hannah och är en front-end utvecklare med en passion för inkluderande design och webb som är lätt att använda. 
       I den här bloggen publicerar jag svar på och personliga tankar till vanliga frågor jag får från kunder och branschkollegor.
     more_articles: "Fler artiklar"
     more_about: "Läs mer om mig"

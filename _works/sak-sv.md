@@ -12,4 +12,4 @@ image: /img/portfolio/sak.png
 work_url: https://sak.se
 
 ---
-Jag gjorde teknisk planering, konfiguration och gränssnittsutveckling.
+Jag gjorde teknisk planering, konfiguration och front-end utveckling.
