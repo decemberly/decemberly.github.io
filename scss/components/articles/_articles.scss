@@ -40,6 +40,14 @@
   }
 }
 
+.c-article__date {
+  margin: 0;
+  padding-top: 1em;
+  font-size: pxtoem(14);
+  border-top: 4px solid color('black');
+  text-align: right;
+}
+
 .c-featured-work {
   background-color: color('black');
   background-size: cover;

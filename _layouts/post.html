@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-  <article class="o-wrapper o-row c-article">
+  <article itemscope itemtype="http://schema.org/Article" class="o-wrapper o-row c-article">
 	  <div class="o-faux-row o-row -large">
 
 	    {% if page.tags %}
@@ -25,9 +25,35 @@ layout: default
 
 	    <svg class="c-divider" aria-hidden="true"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/img/svg.svg#divider"></use></svg>
 
-			<div class="c-body">
+			<div itemtype="articleBody" class="{% if page.date %}o-row {% endif %}c-body">
 	    	{{ content }}
 	    </div>
+
+      {% if page.date %}
+		    <p itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}" class="c-article__date">
+		    {% if page.lang == 'en' %}
+		    	{{ page.date | date: "%B %d, %Y" }}
+		    {% else %}
+			    {% assign m = page.date | date: "%-m" %}
+					{{ page.date | date: "%-d" }}
+					{% case m %}
+					  {% when '1' %}januari
+					  {% when '2' %}februari
+					  {% when '3' %}mars
+					  {% when '4' %}april
+					  {% when '5' %}maj
+					  {% when '6' %}juni
+					  {% when '7' %}juli
+					  {% when '8' %}augusti
+					  {% when '9' %}september
+					  {% when '10' %}oktober
+					  {% when '11' %}november
+					  {% when '12' %}december
+					{% endcase %}
+			    {{ page.date | date: "%Y" }}
+			  {% endif %}
+		    </p>
+		  {% endif %}
 	  </div>
 
     <aside class="o-row c-author">

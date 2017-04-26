@@ -15,6 +15,10 @@
     font-size: pxtoem(26);
   }
 
+  p {
+    margin: 0;
+  }
+
   a {
     @include transition;
     text-decoration: none;
