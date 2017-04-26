@@ -5,9 +5,9 @@ permalink: /about/
 ref: about
 lang: en
 excerpt: >
-  My name is Hannah and I work remotely at [SthlmConnection](http://sthlmconnection.com) as a front-end developer. I'm passionate about making fast, inclusive and responsive web sites. 
+  Curious and dedicated front-end web developer with a passion for usable, scalable and inclusive interfaces. Working remotely for SthlmConnection in Gothenburg, where I strive to create awesome user experiences combining new techniques and well established patterns.
 preamble: >
-  My name is Hannah and I work remotely at [SthlmConnection](http://sthlmconnection.com) as a front-end developer. I'm passionate about making fast, inclusive and responsive web sites. 
+  My name is Hannah and I'm a curious and dedicated front-end web developer with a passion for usable, scalable and inclusive interfaces. Working remotely for [SthlmConnection](http://sthlmconnection.com) in Gothenburg, where I strive to create awesome user experiences combining new techniques and well established patterns.
 
 expertise_title: I'm specialized in
 expertises:

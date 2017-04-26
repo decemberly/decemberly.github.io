@@ -5,9 +5,9 @@ permalink: /sv/om/
 ref: about
 lang: sv
 excerpt: >
-  Jag heter Hannah och jag arbetar remote på [SthlmConnection](http://sthlmconnection.se) som front-end utvecklare. Jag brinner för att skapa snabba, inkluderande och responsiva webbplatser.
+  Nyfiken och dedikerad front-end webbutvecklare som brinner för användbara, skalbara och inkluderande gränssnitt. Arbetar på distans för SthlmConnection i Göteborg där jag strävar efter att skapa fantastiska användarupplevelser som kombinerar ny teknik och väletablerade mönster.
 preamble: >
-  Jag heter Hannah och jag arbetar remote på [SthlmConnection](http://sthlmconnection.se) som front-end utvecklare. Jag brinner för att skapa snabba, inkluderande och responsiva webbplatser.
+  Jag heter Hannah och är en nyfiken och dedikerad front-end webbutvecklare som brinner för användbara, skalbara och inkluderande gränssnitt. Arbetar på distans för [SthlmConnection](http://sthlmconnection.se) i Göteborg där jag strävar efter att skapa fantastiska användarupplevelser som kombinerar ny teknik och väletablerade mönster.
 
 
 expertise_title: Jag är specialiserad på
