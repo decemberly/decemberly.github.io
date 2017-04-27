@@ -5,7 +5,7 @@ lang: sv
 ref: inclusivedesign
 permalink: /sv/tjana-pa-inkluderande-design
 date: 2017-04-27 21:41:21 +0200
-tags: [tillgänglighet]
+tags: [tillgänglighet,design,kod]
 excerpt: >
   Du kan både spara och tjäna pengar samt få nöjdare kunder och anställda om du arbetar med inkluderande design.
 preamble: >
@@ -37,3 +37,8 @@ De flesta av oss kommer någon gång i livet att drabbas av att synen blir sämr
 Är du inte övertygad än? Här finns fler artiklar i ämnet (på engelska):
 * [Stop Talking About Accessibility. Start Talking About Inclusive Design.](https://envato.com/blog/stop-talking-accessibility-start-talking-inclusive-design/) av Paul Boag
 * [What the Heck Is Inclusive Design?](https://24ways.org/2016/what-the-heck-is-inclusive-design/) av Heydon Pickering
+
+### Extramaterial
+* [Contrast Rebellion](http://contrastrebellion.com/), roande sida med fakta om läsbarhet och kontraster
+
+*Detta är del ett i min serie om inkluderande design. Håll utkik efter del två.*
