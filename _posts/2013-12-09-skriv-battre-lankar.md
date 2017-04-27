@@ -5,11 +5,11 @@ lang: sv
 ref: linktext
 permalink: /sv/skriv-battre-lankar
 date: 2013-12-09 08:45:21 +0200
-tags: [tillgänglighet, skrivtips]
+tags: [tillgänglighet, skrivtips, seo]
 excerpt: >
   Här kommer åtta tips för hur du kan skriva tydliga och informativa länkar som användarna förstår.
 preamble: >
-  Länkar är en av de mest grundläggande byggstenarna på en webbplats, utan länkar kan inte varken användare eller sökmotorer navigera bland innehållet. Här kommer åtta tips för hur du kan skriva tydliga och informativa länkar som användarna förstår.
+  Länkar är en av de mest grundläggande byggstenarna på en webbplats, utan länkar kan inte varken användare eller sökmotorer navigera bland innehållet. Här kommer åtta tips för hur du kan skriva tydliga och informativa länkar som användarna förstår.s
 
 ---
 ## 1. Använd bara länkar när det är relevant

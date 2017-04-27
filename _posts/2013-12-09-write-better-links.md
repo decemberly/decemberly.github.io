@@ -5,7 +5,7 @@ lang: en
 ref: linktext
 permalink: /write-better-links
 date:   2013-12-09 08:45:21 +0200
-tags: [accessibility, writing tips]
+tags: [accessibility, writing tips, seo]
 excerpt: >
   Eight tips for writing clear and informative links that users understand.
 preamble: >
