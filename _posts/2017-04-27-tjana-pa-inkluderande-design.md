@@ -14,7 +14,7 @@ preamble: >
 ---
 Vem som helst skulle kunna besöka din webbplats eller applikation just i denna sekund. Vem som helst skulle kunna bli din nästa kund, läsare, medarbetare eller kanske givare. Och visst är det fantastiskt hur vi med teknikens hjälp kan nå ut vitt och brett, högt och lågt, till allt och alla (om vi vill förstås)!
 
-##Vem når du egentligen?
+## Vem når du egentligen?
 Problemet är att du når inte ut till vem som helst, oftast inte ens en bråkdel av de du faktiskt skulle kunna nå. Istället är risken stor att du omedvetet utesluter människor som skulle kunna öka er omsättning, bli en varumärkesambassadör eller vad ni nu har för mål.
 
 Men vår målgrupp är faktiskt inte vem som helst, tänker du kanske nu. Givetvis inte, men rimligen är din målgrupp inte enbart en handfull högerhänta, yngre människor som alltid sitter i ett perfekt upplyst rum, framför högupplösta skärmar med superdatorer, fiberuppkoppling och senaste telefonen. Så varför är din sajt byggd för denna lilla minoritet?
