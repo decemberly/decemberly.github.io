@@ -9,7 +9,7 @@ tags: [tillgänglighet, skrivtips, seo]
 excerpt: >
   Här kommer åtta tips för hur du kan skriva tydliga och informativa länkar som användarna förstår.
 preamble: >
-  Länkar är en av de mest grundläggande byggstenarna på en webbplats, utan länkar kan inte varken användare eller sökmotorer navigera bland innehållet. Här kommer åtta tips för hur du kan skriva tydliga och informativa länkar som användarna förstår.s
+  Länkar är en av de mest grundläggande byggstenarna på en webbplats, utan länkar kan inte varken användare eller sökmotorer navigera bland innehållet. Här kommer åtta tips för hur du kan skriva tydliga och informativa länkar som användarna förstår.
 
 ---
 ## 1. Använd bara länkar när det är relevant

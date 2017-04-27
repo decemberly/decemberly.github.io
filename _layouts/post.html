@@ -30,28 +30,31 @@ layout: default
 	    </div>
 
       {% if page.date %}
-		    <p itemprop="datePublished" content="{{ page.date | date: "%Y-%m-%d" }}" class="c-article__date">
-		    {% if page.lang == 'en' %}
-		    	{{ page.date | date: "%B %d, %Y" }}
-		    {% else %}
-			    {% assign m = page.date | date: "%-m" %}
-					{{ page.date | date: "%-d" }}
-					{% case m %}
-					  {% when '1' %}januari
-					  {% when '2' %}februari
-					  {% when '3' %}mars
-					  {% when '4' %}april
-					  {% when '5' %}maj
-					  {% when '6' %}juni
-					  {% when '7' %}juli
-					  {% when '8' %}augusti
-					  {% when '9' %}september
-					  {% when '10' %}oktober
-					  {% when '11' %}november
-					  {% when '12' %}december
-					{% endcase %}
-			    {{ page.date | date: "%Y" }}
-			  {% endif %}
+		    <p class="c-article__date">
+		    	{{ site.t[page.lang].published }} 
+			    <time itemprop="datePublished" datetime="{{ page.date | date: "%Y-%m-%d" }}">
+			    {% if page.lang == 'en' %}
+			    	{{ page.date | date: "%B %d, %Y" }}
+			    {% else %}
+				    {% assign m = page.date | date: "%-m" %}
+						{{ page.date | date: "%-d" }}
+						{% case m %}
+						  {% when '1' %}januari
+						  {% when '2' %}februari
+						  {% when '3' %}mars
+						  {% when '4' %}april
+						  {% when '5' %}maj
+						  {% when '6' %}juni
+						  {% when '7' %}juli
+						  {% when '8' %}augusti
+						  {% when '9' %}september
+						  {% when '10' %}oktober
+						  {% when '11' %}november
+						  {% when '12' %}december
+						{% endcase %}
+				    {{ page.date | date: "%Y" }}
+				  {% endif %}
+				  </time>
 		    </p>
 		  {% endif %}
 	  </div>

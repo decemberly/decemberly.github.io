@@ -61,6 +61,7 @@ t:
     more_about: "Read more about me"
     more_work: "See more of my work"
     work_url: "Visit site"
+    published: Published on
     menu_text: Menu
     menu:
       work:
@@ -89,6 +90,7 @@ t:
     more_about: "Läs mer om mig"
     more_work: "Se fler uppdrag"
     work_url: "Besök sajt"
+    published: Publicerad den
     menu_text: Meny
     menu:
       work:
