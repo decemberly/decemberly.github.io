@@ -314,9 +314,9 @@ li > ol {
 html {
   line-height: 1.6;
   padding: 0;
-  background-color: #f0ede1;
+  background-color: #f5f5f5;
   color: #1a1a1a;
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
@@ -348,7 +348,7 @@ blockquote {
 }
 
 .o-row.-line {
-  border-bottom: 1px solid #ebebeb;
+  border-bottom: 1px solid #eee;
 }
 
 .o-faux-row {
@@ -407,7 +407,7 @@ blockquote {
   background-size: cover;
   background-position: center center;
   background-blend-mode: multiply;
-  border-bottom: 4px solid #fcce00;
+  border-bottom: 4px solid #ffdf64;
 }
 
 .c-featured-work:last-child {
@@ -423,7 +423,7 @@ blockquote {
 }
 
 .c-author {
-  background-color: #fcce00;
+  background-color: #ffdf64;
   padding: 2.2em;
 }
 
@@ -441,12 +441,12 @@ blockquote {
 }
 
 .c-background-yellow {
-  background: #fcce00;
+  background: #ffdf64;
   overflow: hidden;
 }
 
 .c-background-grey {
-  background: #ebebeb;
+  background: #eee;
 }
 
 .c-button {
@@ -454,7 +454,7 @@ blockquote {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   border: 0;
-  background: #f0ede1;
+  background: #f5f5f5;
   color: #b8312f;
   display: inline-block;
   text-decoration: none;
@@ -516,14 +516,13 @@ blockquote {
 }
 
 .c-copyright {
-  color: #f0ede1;
+  color: #f5f5f5;
   text-align: center;
 }
 
 .c-header {
   padding: 1.2em 0 0.8em;
-  background-color: #fcce00;
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.1);
+  background-color: #ffdf64;
 }
 
 .c-header__wrapper {
@@ -567,7 +566,7 @@ blockquote {
   color: #1a1a1a;
   word-wrap: break-word;
   font-weight: bold;
-  font-family: "Playfair Display", serif;
+  font-family: "Droid Serif", serif;
 }
 
 .c-heading-a a,
@@ -612,13 +611,14 @@ blockquote {
 .-white.c-heading-b a,
 .-white.c-heading-c a,
 .-white.c-heading-d a {
-  color: #f0ede1;
+  color: #f5f5f5;
 }
 
 .c-heading-a {
   font-size: 1.875em;
   line-height: 1.15;
   margin: 0 0 0.5em;
+  letter-spacing: -0.02em;
 }
 
 .c-heading-b {
@@ -634,7 +634,7 @@ blockquote {
 }
 
 .c-heading-d {
-  font-family: "Roboto", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 1em;
   line-height: 1.15;
   margin: 0 0 0.3em;
@@ -653,11 +653,11 @@ blockquote {
 }
 
 .c-preheading.-white {
-  color: #f0ede1;
+  color: #f5f5f5;
 }
 
 .c-hero {
-  background: #f0ede1;
+  background: #f5f5f5;
   position: relative;
 }
 
@@ -665,14 +665,14 @@ blockquote {
   display: inline-block;
   width: 2.25em;
   height: 2.25em;
-  fill: #f0ede1;
+  fill: #f5f5f5;
 }
 
 .c-icon-linkedin {
   display: inline-block;
   width: 2.25em;
   height: 2.25em;
-  fill: #f0ede1;
+  fill: #f5f5f5;
 }
 
 .c-icon-email {
@@ -694,15 +694,11 @@ blockquote {
   height: 0.5625em;
   margin-top: 0.8em;
   margin-bottom: 1.6em;
-  fill: #b8312f;
+  fill: #1a1a1a;
 }
 
 .c-divider.-white {
-  fill: #f0ede1;
-}
-
-.c-divider.-black {
-  fill: #1a1a1a;
+  fill: #f5f5f5;
 }
 
 .c-divider.-center {
@@ -800,7 +796,7 @@ blockquote {
 .c-social__link {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  color: #f0ede1;
+  color: #f5f5f5;
   font-size: 1.125em;
   line-height: 2.4;
   padding: 0.3125em;
@@ -916,11 +912,11 @@ blockquote {
 }
 
 .c-link-cta.-white {
-  color: #f0ede1;
+  color: #f5f5f5;
 }
 
 .c-link-cta.-white [class^='c-icon'] {
-  fill: #f0ede1;
+  fill: #f5f5f5;
 }
 
 .c-nav__wrapper {
@@ -945,7 +941,6 @@ blockquote {
   letter-spacing: 1px;
   font-size: 1em;
   margin: 0;
-  text-shadow: 4px 4px rgba(0, 0, 0, 0.05);
   color: #1a1a1a;
   padding: 1em 0;
   border-bottom: 1px solid #1a1a1a;
@@ -995,17 +990,17 @@ blockquote {
 
 .c-tags {
   list-style: none;
-  margin: 0 0 0.8em;
+  margin: 0 0 1.6em;
   padding: 0;
 }
 
 .c-tags__item {
   text-transform: uppercase;
   font-size: 0.6875em;
-  letter-spacing: 0.1em;
-  background-color: #fcce00;
+  letter-spacing: 0.2em;
+  background-color: #ffdf64;
   color: #1a1a1a;
-  padding: 0.5em 0.7em 0.4em;
+  padding: 0.5em 0.7em;
   display: inline-block;
   line-height: 1.1;
   font-weight: bold;
@@ -1013,9 +1008,9 @@ blockquote {
 
 .c-preamble {
   font-size: 1.125em;
-  line-height: 1.5;
+  line-height: 1.7;
   max-width: 36em;
-  font-weight: bold;
+  font-weight: 300;
   margin-bottom: 1.1em;
 }
 
@@ -1027,28 +1022,26 @@ blockquote {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   color: #1a1a1a;
-  text-decoration: none;
-  text-shadow: 0.05em 0 0 #f0ede1, -0.05em 0 0 #f0ede1, 0 0.05em 0 #f0ede1, 0 -0.05em 0 #f0ede1, 0.1em 0 0 #f0ede1, -0.1em 0 0 #f0ede1, 0 0.1em 0 #f0ede1, 0 -0.1em 0 #f0ede1;
-  background-image: -webkit-linear-gradient(left, #b8312f 0%, #b8312f 100%);
-  background-image: linear-gradient(to right, #b8312f 0%, #b8312f 100%);
-  background-repeat: repeat-x;
-  background-position: bottom 0.05em center;
-  background-size: 100% 0.1em;
   outline: none;
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom: 0.2em solid #ffdf64;
+  padding: 0.3em 0 0.2em;
 }
 
 .c-preamble a:hover,
 .c-preamble a:focus,
 .c-preamble a:active {
-  color: #b8312f;
+  color: #1a1a1a;
+  background-color: #ffdf64;
 }
 
 .c-body {
   font-size: 0.875em;
-  line-height: 1.65;
+  line-height: 1.7;
   max-width: 36em;
   margin: 0;
-  color: #333;
+  font-weight: 300;
 }
 
 .c-body.-center {
@@ -1073,20 +1066,18 @@ blockquote {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   color: #1a1a1a;
-  text-decoration: none;
-  text-shadow: 0.05em 0 0 #f0ede1, -0.05em 0 0 #f0ede1, 0 0.05em 0 #f0ede1, 0 -0.05em 0 #f0ede1, 0.1em 0 0 #f0ede1, -0.1em 0 0 #f0ede1, 0 0.1em 0 #f0ede1, 0 -0.1em 0 #f0ede1;
-  background-image: -webkit-linear-gradient(left, #b8312f 0%, #b8312f 100%);
-  background-image: linear-gradient(to right, #b8312f 0%, #b8312f 100%);
-  background-repeat: repeat-x;
-  background-position: bottom 0.05em center;
-  background-size: 100% 0.1em;
   outline: none;
+  font-weight: 400;
+  text-decoration: none;
+  border-bottom: 0.2em solid #ffdf64;
+  padding: 0.3em 0 0.2em;
 }
 
 .c-body a:hover,
 .c-body a:focus,
 .c-body a:active {
-  color: #b8312f;
+  color: #1a1a1a;
+  background-color: #ffdf64;
 }
 
 .c-body ul,
@@ -1110,19 +1101,28 @@ blockquote {
 }
 
 .c-body h2 {
+  font-family: "Droid Serif", serif;
   font-weight: bold;
   line-height: 1.2;
   font-size: 1.5em;
-  margin: 1.8em 0 0.3em;
+  margin: 1.8em 0 0.4em;
   color: #1a1a1a;
+  letter-spacing: -0.01em;
 }
 
 .c-body h3 {
-  font-weight: normal;
+  font-weight: 400;
   line-height: 1.2;
   font-size: 1.125em;
-  margin: 1em 0 0.2em;
+  margin: 1.2em 0 0.3em;
   color: #1a1a1a;
+  letter-spacing: 0.01em;
+}
+
+.c-body h3[class$='__example__heading'] {
+  font-size: 0.9em;
+  margin-top: 2em;
+  margin-bottom: 0.7em;
 }
 
 .c-body > p {
@@ -1140,7 +1140,7 @@ blockquote {
   line-height: 1.2;
   text-align: center;
   margin: 1.5em 0;
-  font-family: "Playfair Display", serif;
+  font-family: "Droid Serif", serif;
   border-top: 4px solid #1a1a1a;
   border-bottom: 4px solid #1a1a1a;
   padding: 3em 0.5em 1em;
@@ -1161,6 +1161,12 @@ blockquote {
   margin-top: 0;
 }
 
+.c-body__example {
+  background-color: #eee;
+  padding: 1.2em 1.5em;
+  font-size: 0.9em;
+}
+
 .c-body-small {
   font-size: 0.875em;
   line-height: 1.65;
@@ -1170,7 +1176,7 @@ blockquote {
 }
 
 .c-body-small.-white {
-  color: #f0ede1;
+  color: #f5f5f5;
 }
 
 .c-list-naked {
@@ -1773,11 +1779,11 @@ blockquote {
   }
 
   .c-body h2 {
-    font-size: 1.5em;
+    font-size: 1.75em;
   }
 
   .c-body h3 {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 
   .c-body blockquote {

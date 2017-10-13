@@ -2,9 +2,9 @@
 
 .c-preamble {
   font-size: pxtoem(18);
-  line-height: 1.5;
+  line-height: 1.7;
   max-width: 36em;
-  font-weight: bold;
+  font-weight: 300;
   margin-bottom: 1.1em;
 
   @include respond-to('medium') {
@@ -22,49 +22,28 @@
   a {
     @include transition;
     color: color('black');
-    text-decoration: none;
-    text-shadow: 0.05em 0 0 color('white'), 
-                -0.05em 0 0 color('white'),
-                0 0.05em 0 color('white'), 
-                0 -0.05em 0 color('white'),
-                0.1em 0 0 color('white'), 
-                -0.1em 0 0 color('white'),
-                0 0.1em 0 color('white'), 
-                0 -0.1em 0 color('white');
-    background-image: linear-gradient(to right, color('red') 0%, color('red') 100%);
-    background-repeat: repeat-x;
-    background-position: bottom 0.05em center;
-    background-size: 100% 0.1em;
     outline: none;
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 0.2em solid color('yellow');
+    padding: 0.3em 0 0.2em;
 
     &:hover,
     &:focus,
     &:active {
-      color: color('red');
+      color: color('black');
+      background-color: color('yellow');
     }
-
-    // &:focus {
-    //   outline: none;
-    //   background-color: #cef;
-    //   text-shadow: 0.05em 0 0 #cef,
-    //               -0.05em 0 0 #cef,
-    //               0 0.05em 0 #cef, 
-    //               0 -0.05em 0 #cef,
-    //               0.1em 0 0 #cef,
-    //               -0.1em 0 0 #cef,
-    //               0 0.1em 0 #cef,
-    //               0 -0.1em 0 #cef;
-    // }
   }
 }
 
 // Body text
 .c-body {
   font-size: pxtoem(14);
-  line-height: 1.65;
+  line-height: 1.7;
   max-width: 36em;
   margin: 0;
-  color: color('grey','darker');
+  font-weight: 300;
 
   @include respond-to('medium') {
     font-size: pxtoem(18);
@@ -95,25 +74,17 @@
   a {
     @include transition;
     color: color('black');
-    text-decoration: none;
-    text-shadow: 0.05em 0 0 color('white'), 
-                -0.05em 0 0 color('white'),
-                0 0.05em 0 color('white'), 
-                0 -0.05em 0 color('white'),
-                0.1em 0 0 color('white'), 
-                -0.1em 0 0 color('white'),
-                0 0.1em 0 color('white'), 
-                0 -0.1em 0 color('white');
-    background-image: linear-gradient(to right, color('red') 0%, color('red') 100%);
-    background-repeat: repeat-x;
-    background-position: bottom 0.05em center;
-    background-size: 100% 0.1em;
     outline: none;
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 0.2em solid color('yellow');
+    padding: 0.3em 0 0.2em;
 
     &:hover,
     &:focus,
     &:active {
-      color: color('red');
+      color: color('black');
+      background-color: color('yellow');
     }
   }
 
@@ -141,26 +112,35 @@
   }
 
   h2 {
+    font-family: $droidserif;
     font-weight: bold;
     line-height: 1.2;
     font-size: pxtoem(24,16);
-    margin: 1.8em 0 0.3em;
+    margin: 1.8em 0 0.4em;
     color: color('black');
+    letter-spacing: -0.01em;
 
     @include respond-to('large') {
-      font-size: pxtoem(30,20);
+      font-size: pxtoem(35,20);
     }
   }
 
   h3 {
-    font-weight: normal;
+    font-weight: 400;
     line-height: 1.2;
     font-size: pxtoem(18,16);
-    margin: 1em 0 0.2em;
+    margin: 1.2em 0 0.3em;
     color: color('black');
+    letter-spacing: 0.01em;
 
     @include respond-to('large') {
-      font-size: pxtoem(24,20);
+      font-size: pxtoem(26,20);
+    }
+
+    &[class$='__example__heading'] {
+      font-size: 0.9em;
+      margin-top: 2em;
+      margin-bottom: 0.7em;
     }
   }
 
@@ -179,7 +159,7 @@
     line-height: 1.2;
     text-align: center;
     margin: 1.5em 0;
-    font-family: $playfair;
+    font-family: $droidserif;
     border-top: 4px solid color('black');
     border-bottom: 4px solid color('black');
     padding: 3em 0.5em 1em;
@@ -207,6 +187,12 @@
 
   *:first-child {
     margin-top: 0;
+  }
+
+  &__example {
+    background-color: color('grey','lighter');
+    padding: 1.2em 1.5em;
+    font-size: 0.9em;
   }
 }
 

@@ -1,15 +1,15 @@
 .c-tags {
   list-style: none;
-  margin: 0 0 0.8em;
+  margin: 0 0 1.6em;
   padding: 0;
 
   &__item {
     text-transform: uppercase;
     font-size: pxtoem(11);
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2em;
     background-color: color('yellow');
     color: color('black');
-    padding: 0.5em 0.7em 0.4em;
+    padding: 0.5em 0.7em;
     display: inline-block;
     line-height: 1.1;
     font-weight: bold;

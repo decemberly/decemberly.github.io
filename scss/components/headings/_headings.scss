@@ -9,7 +9,7 @@
   color: color('black');
   word-wrap: break-word;
   font-weight: bold;
-  font-family: $playfair;
+  font-family: $droidserif;
 
   a {
     @include transition;
@@ -42,6 +42,7 @@
   font-size: pxtoem(30);
   line-height: 1.15;
   margin: 0 0 0.5em;
+  letter-spacing: -0.02em;
 
   @include respond-to('small') {
     font-size: pxtoem(34);
@@ -107,7 +108,7 @@
 %heading-d,
 .c-heading-d {
   @extend %heading;
-  font-family: $roboto;
+  font-family: $lato;
   font-size: pxtoem(16);
   line-height: 1.15;
   margin: 0 0 0.3em;

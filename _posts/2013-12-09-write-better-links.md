@@ -25,9 +25,15 @@ Sometimes it may be tempting to cram as many links as possible in the text, but 
 The user wants to know what happens when they click on the link. Too often we see links like "read more" or just "click here". "Read more" is even one of the most common internal link text. These links provide no information at all, and as users we already know that links are clickable and need not be informed about it. If the link leads to an e-mail address, the link text may be the same as the e-mail address itself, it's clearer than linking a name or job title.
 
 ### Instead of:
+{:.c-body__example__heading}
+
+{:.c-body__example}
 Municipalities and county councils can also do a lot to reduce food welfare, according to the Food Safety Authority's new report. To read the full report, <a rel="nofollow" href="#">click here</a>.
 
 ### You can write like this:
+{:.c-body__example__heading}
+
+{:.c-body__example}
 Municipalities and county councils can also do a lot to reduce food welfare, according to the Food Safety Authority's new report. Do you want to know more? <a rel="nofollow" href="#">Read the full report "Food in Sweden"</a>.
 
 ## 3. Don't open links in new windows
@@ -45,18 +51,30 @@ There are many ways to open links in a new tab; Click with the scroll wheel, ctr
 Both Google and screen readers (a tool for visually impaired users) uses the link texts separated from the rest of the text. Therefore, the links need to work even outside their context.
 
 ### Instead of:
+{:.c-body__example__heading}
+
+{:.c-body__example}
 You can read about our products on <a rel="nofollow" href="#">this page</a>.
 
 ### You can write like this:
+{:.c-body__example__heading}
+
+{:.c-body__example}
 <a rel="nofollow" href="#">Read more about our products</a>.
 
 ## 5. Use the link as a call to action
 Links are a great opportunity to invite the user to do something, but it's also important to give the user a good reason why they should do just that. A good call to action should be both interesting and convincing. Don't make all links call to actions, but pick a few and remember to write varying link texts.
 
 ### Instead of:
+{:.c-body__example__heading}
+
+{:.c-body__example}
 <a rel="nofollow" href="#">Here</a> you can sign up for our newsletter.
 
 ### You can write like this:
+{:.c-body__example__heading}
+
+{:.c-body__example}
 <a rel="nofollow" href="#">Sign up for our newsletter</a> to receive updates about our breakfast seminars and other events.
 
 ## 6. Write the most important first

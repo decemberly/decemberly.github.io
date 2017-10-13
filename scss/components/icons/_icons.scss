@@ -31,7 +31,7 @@
   height: pxtoem(9);
   margin-top: 0.8em;
   margin-bottom: 1.6em;
-  fill: color('red');
+  fill: color('black');
 
   @include respond-to('medium') {
     margin-bottom: 2em;
@@ -47,10 +47,6 @@
 
   &.-white {
     fill: color('white');
-  }
-
-  &.-black {
-    fill: color('black');
   }
 
   &.-center {

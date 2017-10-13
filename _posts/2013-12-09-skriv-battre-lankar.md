@@ -25,9 +25,15 @@ Ibland kan det vara lockande att få in så många länkar som möjligt i texten
 Användaren vill veta vad som händer när hen klickar på länken. Alltför ofta ser vi länkar som "läs mer" eller bara "klicka här". "Läs mer" är till och med Sveriges vanligaste interna länktext. Dessa länkar ger ingen information alls, och som användare vet vi redan att länkar är klickbara och behöver inte informeras om det. Om länken går till en e-postadress kan länken vara densamma som själva e-postadressen, det är tydligare än att länka ett namn eller jobbtitel.
 
 ### Istället för:
+{:.c-body__example__heading}
+
+{:.c-body__example}
 Kommuner och landsting kan också göra mycket för att minska matsvinnet, skriver livsmedelsverket i en ny rapport. För att läsa hela rapporten, <a rel="nofollow" href="#">klicka här</a>.
 
 ### Så kan du skriva så här:
+{:.c-body__example__heading}
+
+{:.c-body__example}
 Kommuner och landsting kan också göra mycket för att minska matsvinnet, skriver livsmedelsverket i en ny rapport. Vill du veta mer? <a rel="nofollow" href="#">Läs hela rapporten "Matsvinn i Sverige"</a>.
 
 ## 3. Öppna inte länkar i nya fönster
@@ -45,18 +51,30 @@ Det finns många sätt att öppna länkar i en ny flik; klick med scroll-hjulet,
 Både Google och skärmläsare (ett hjälpmedel för bland annat synskadade) använder länktexterna separerade från resten av texten. Därför behöver länkarna fungera även utanför sitt sammanhang.
 
 ### Istället för:
+{:.c-body__example__heading}
+
+{:.c-body__example}
 Du kan läsa om våra produkter på <a rel="nofollow" href="#">denna sida</a>.
 
 ### Så kan du skriva så här:
+{:.c-body__example__heading}
+
+{:.c-body__example}
 <a rel="nofollow" href="#">Läs mer om våra produkter</a>.
 
 ## 5. Använd länken som en uppmaning
 Länkar är ett utmärkt tillfälle att uppmana användaren till något, men det är också viktigt att ge användaren en bra anledning till varför hen ska göra just detta. En bra uppmaning bör vara både intressant och övertygande. Använd inte alla länkar som uppmaningar, utan välj ut någon enstaka och tänk på att variera länktexterna.
 
 ### Istället för:
+{:.c-body__example__heading}
+
+{:.c-body__example}
 <a rel="nofollow" href="#">Här</a> kan du anmäla dig till vårt nyhetsbrev.
 
 ### Så kan du skriva så här:
+{:.c-body__example__heading}
+
+{:.c-body__example}
 <a rel="nofollow" href="#">Anmäl dig till vårt nyhetsbrev</a> för att för att få uppdateringar om våra frukostseminarier och andra event.
 
 ## 6. Skriv det viktigaste först
