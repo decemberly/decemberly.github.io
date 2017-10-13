@@ -198,6 +198,7 @@
 
 .c-body-small {
   font-size: pxtoem(14);
+  font-weight: 300;
   line-height: 1.65;
   margin: 0;
   max-width: 36em;
@@ -209,6 +210,10 @@
 
   &.-white {
     color: color('white');
+  }
+
+  p {
+    margin: 0;
   }
 }
 

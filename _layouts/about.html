@@ -32,7 +32,8 @@ layout: default
         {% for expertise in page.expertises %}
         <li class="o-row -small o-6-12@large u-left@large">
           <h3 class="c-heading-d">{{ expertise.title }}</h3>
-          {{ expertise.body | markdownify }}
+          <div class="c-body-small">{{ expertise.body | markdownify }}
+          </div>
         </li>
         {% endfor %}
       </ul>

@@ -452,19 +452,18 @@ blockquote {
 .c-button {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
+  font-weight: 400;
   cursor: pointer;
   border: 0;
-  background: #f5f5f5;
-  color: #b8312f;
   display: inline-block;
   text-decoration: none;
-  padding: 0.625em 1.875em 0.3125em;
-  border-radius: 0.3125em;
-  font-weight: bold;
-  box-shadow: 0 2px 0 0 #d9d9d9;
-  border-bottom: 1px solid #d9d9d9;
+  padding: 0.625em 0.75em;
+  box-shadow: 0 0 0 2px #ffdf64;
   position: relative;
-  line-height: 2em;
+  line-height: 1.9;
+  font-size: 1.125em;
+  background-color: transparent;
+  color: #f5f5f5;
 }
 
 .c-button [class^='c-icon'] {
@@ -475,16 +474,17 @@ blockquote {
 }
 
 .c-button:hover,
-.c-button:focus {
-  top: 1px;
-  box-shadow: 0 1px 0 0 #d9d9d9;
+.c-button:focus,
+.c-button:active {
   text-decoration: none;
+  background-color: #ffdf64;
+  color: #1a1a1a;
 }
 
-.c-button:active {
-  top: 2px;
-  box-shadow: 0;
-  text-decoration: none;
+.c-button:hover [class^='c-icon'],
+.c-button:focus [class^='c-icon'],
+.c-button:active [class^='c-icon'] {
+  fill: #1a1a1a;
 }
 
 .c-button--menu {
@@ -634,10 +634,10 @@ blockquote {
 }
 
 .c-heading-d {
-  font-family: "Lato", sans-serif;
+  font-family: "Droid Serif", serif;
   font-size: 1em;
   line-height: 1.15;
-  margin: 0 0 0.3em;
+  margin: 0 0 0.5em;
 }
 
 .c-preheading {
@@ -679,7 +679,7 @@ blockquote {
   display: inline-block;
   width: 2em;
   height: 2em;
-  fill: #b8312f;
+  fill: #f5f5f5;
 }
 
 .c-icon-arrow {
@@ -811,10 +811,10 @@ blockquote {
   content: '';
   position: absolute;
   width: 100%;
-  height: 1px;
-  bottom: -1px;
+  height: 2px;
+  bottom: -3px;
   left: 0;
-  background-color: #b8312f;
+  background-color: #ffdf64;
   visibility: hidden;
   -webkit-transform: scaleX(0);
   -ms-transform: scaleX(0);
@@ -1169,6 +1169,7 @@ blockquote {
 
 .c-body-small {
   font-size: 0.875em;
+  font-weight: 300;
   line-height: 1.65;
   margin: 0;
   max-width: 36em;
@@ -1177,6 +1178,10 @@ blockquote {
 
 .c-body-small.-white {
   color: #f5f5f5;
+}
+
+.c-body-small p {
+  margin: 0;
 }
 
 .c-list-naked {
@@ -1338,8 +1343,10 @@ blockquote {
   }
 
   .c-button {
-    font-size: 1.125em;
-    line-height: 1.77778em;
+    font-size: 1.375em;
+    padding: 1em 1.875em;
+    border: 2px solid #1a1a1a;
+    box-shadow: 0 0 0 5px #ffdf64;
   }
 
   .c-button--menu {

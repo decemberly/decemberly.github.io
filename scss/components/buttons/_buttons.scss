@@ -1,22 +1,23 @@
 .c-button {
   @include transition;
+  font-weight: 400;
   cursor: pointer;
   border: 0;
-  background: color('white');
-  color: color('red');
   display: inline-block;
   text-decoration: none;
-  padding: pxtoem(10) pxtoem(30) pxtoem(5);
-  border-radius: pxtoem(5);
-  font-weight: bold;
-  box-shadow: 0 2px 0 0 color('grey','light');
-  border-bottom: 1px solid color('grey','light');
+  padding: pxtoem(10) pxtoem(12);
+  box-shadow: 0 0 0 2px color('yellow');
   position: relative;
-  line-height: pxtoem(32);
+  line-height: 1.9;
+  font-size: pxtoem(18);
+  background-color: transparent;
+  color: color('white');
 
   @include respond-to('medium') {
-    font-size: pxtoem(18);
-    line-height: pxtoem(32,18);
+    font-size: pxtoem(22);
+    padding: pxtoem(16) pxtoem(30);
+    border: 2px solid color('black');
+    box-shadow: 0 0 0 5px color('yellow');
   }
 
   [class^='c-icon'] {
@@ -26,16 +27,15 @@
   }
 
   &:hover,
-  &:focus {
-    top: 1px;
-    box-shadow: 0 1px 0 0 color('grey','light');
-    text-decoration: none;
-  }
-
+  &:focus,
   &:active {
-    top: 2px;
-    box-shadow: 0;
     text-decoration: none;
+    background-color: color('yellow');
+    color: color('black');
+
+    [class^='c-icon'] {
+      fill: color('black');
+    }
   }
 }
 

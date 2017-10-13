@@ -108,10 +108,10 @@
 %heading-d,
 .c-heading-d {
   @extend %heading;
-  font-family: $lato;
+  font-family: $droidserif;
   font-size: pxtoem(16);
   line-height: 1.15;
-  margin: 0 0 0.3em;
+  margin: 0 0 0.5em;
 
   @include respond-to('medium') {
     font-size: pxtoem(18);
